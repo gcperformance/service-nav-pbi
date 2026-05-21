@@ -1,0 +1,144 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "a26d868ca7b520d85561",
+  "displayName": "Service Details",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a9409b3410f2d75d8794",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sid_list"
+              }
+            },
+            "Property": "service_id"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "sid_list",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "s"
+                          }
+                        },
+                        "Property": "service_id"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'1112'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "d85d0f463c3b0e984c12",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "6138013d069ba312b886",
+        "boundFilter": "a9409b3410f2d75d8794",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sid_list"
+              }
+            },
+            "Property": "service_id"
+          }
+        }
+      }
+    ],
+    "acceptsFilterContext": "None"
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "194L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "15605efd24dbbfc0a084",
+      "target": "726c8fb054041bf79536",
+      "type": "NoFilter"
+    },
+    {
+      "source": "15605efd24dbbfc0a084",
+      "target": "763fe3c4bffa9fe59885",
+      "type": "NoFilter"
+    },
+    {
+      "source": "15605efd24dbbfc0a084",
+      "target": "c9e9c63f7efc7582dbe1",
+      "type": "NoFilter"
+    },
+    {
+      "source": "15605efd24dbbfc0a084",
+      "target": "3a3f818e92724a7d6383",
+      "type": "NoFilter"
+    },
+    {
+      "source": "15605efd24dbbfc0a084",
+      "target": "10b93e46965e06e58980",
+      "type": "NoFilter"
+    },
+    {
+      "source": "15605efd24dbbfc0a084",
+      "target": "c672b1a3010e1afefa7f",
+      "type": "NoFilter"
+    },
+    {
+      "source": "15605efd24dbbfc0a084",
+      "target": "4d6d9ce32aa63895c095",
+      "type": "NoFilter"
+    },
+    {
+      "source": "15605efd24dbbfc0a084",
+      "target": "e9667c2002f4a2704173",
+      "type": "NoFilter"
+    }
+  ]
+}

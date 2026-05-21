@@ -1,0 +1,151 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "702c3ee82ef355fb380e",
+  "displayName": "Summary Data Quality Review",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b9b556ad7951168199b1",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "department_en"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "e800b2f34106c6cc5d68",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "department_fr"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "ce89fe47403ee307eb35",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "org_id"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "e610d8b5ce24729bd01b",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "qa_issues_descriptions"
+              }
+            },
+            "Property": "severity_en"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "769cb9b29410caa30890",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "qa_issues_descriptions"
+              }
+            },
+            "Property": "severity_fr"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
+  "pageBinding": {
+    "name": "1731604b8557e4324da2",
+    "type": "Default",
+    "parameters": [],
+    "acceptsFilterContext": "None"
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "258L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "efa5258ac3a17a2d55db",
+      "target": "a18531be1edd7082b35d",
+      "type": "DataFilter"
+    },
+    {
+      "source": "efa5258ac3a17a2d55db",
+      "target": "ffdb3957172a309ab765",
+      "type": "DataFilter"
+    },
+    {
+      "source": "e1f0d70f39141fe1f45e",
+      "target": "a18531be1edd7082b35d",
+      "type": "DataFilter"
+    },
+    {
+      "source": "e1f0d70f39141fe1f45e",
+      "target": "ffdb3957172a309ab765",
+      "type": "DataFilter"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+relationship 21cdf3eb-e908-d94e-2e11-765d6a4b0cbb
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: si.fy_org_id_service_id
+	toColumn: si_volume.fy_org_id_service_id
+
+relationship 41329bb0-6cb7-80ca-6eca-a9e32910742b
+	fromColumn: si.org_id
+	toColumn: dept.org_id
+
+relationship 5e0cf920-993f-1d5d-98bb-7ec39fdfc00f
+	fromColumn: service_fte_spending.org_program_id
+	toColumn: program_list.org_program_id
+
+relationship 576cc726-d2e2-fc34-df59-c200fbe12eff
+	fromColumn: service_fte_spending.snapshot
+	toColumn: snapshot_options.options
+
+relationship 36261fd6-6d79-cf15-1dc3-45599ebec0ae
+	fromColumn: maf_all.snapshot
+	toColumn: snapshot_options.options
+
+relationship f9a0c061-2d87-32c7-651d-7149645bd114
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: service_fte_spending.org_service_id
+	toColumn: si.org_service_id
+
+relationship 8ae3b5c2-dbc4-374b-3dca-d9d08fc49d02
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: maf_all.fy_org_id
+	toColumn: si.fy_org_id
+
+relationship a6b8ebf9-ab85-9e71-ef8e-4d9fcf53e44a
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: ss.fy_org_id_service_id
+	toColumn: si.fy_org_id_service_id
+
+relationship 38c37de8-0924-68c0-aa90-515864d9c9f3
+	fromColumn: ss.snapshot
+	toColumn: snapshot_options.options
+
+relationship 6838eceb-9ac1-39cf-ceb9-4ced58f6c04b
+	fromColumn: si_volume.snapshot
+	toColumn: snapshot_options.options
+
+relationship 232b6f77-f18d-f45c-4dfc-1b09bc7c5417
+	fromColumn: si.snapshot
+	toColumn: snapshot_options.options
+
+relationship a2751958-dee2-1cc1-68f5-02126ee7cdcd
+	fromColumn: si.fiscal_yr
+	toColumn: fiscal_yr.fiscal_yr
+
+relationship 5d593ce1-cc01-7c18-9f07-e0df48dbfa3a
+	fromColumn: 'updates since 2026-01-19'.snapshot
+	toColumn: snapshot_options.options
+
+relationship 728eef92-ab25-e0fb-7bcc-4a5a40f94b16
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'updates since 2026-01-19'.key
+	toColumn: si.fy_org_id_service_id
+
+relationship d546a47f-2c4f-4b6c-a58a-add1ebbaf4c5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: timestamp.Timestamp
+	toColumn: LocalDateTable_d5c87641-1d0b-4bc9-9c19-673e484ce64c.Date
+
+relationship 7d4ca039-17c2-fc72-bd08-30f4f8a02787
+	toCardinality: many
+	fromColumn: si_qa_report.fy_org_id_service_id
+	toColumn: si.fy_org_id_service_id
+
+relationship e8eaeba1-66bf-5f20-e5a6-31eb4d5fd59c
+	toCardinality: many
+	fromColumn: ss_qa_report.fy_org_id_service_id_std_id
+	toColumn: ss.fy_org_id_service_id_std_id
+
+relationship c6a5e7d7-b4cc-fe22-e114-db53d432cfb4
+	fromColumn: ss_qa_report.issue
+	toColumn: qa_issues_descriptions.qa_field_name
+
+relationship b8706989-859b-9f80-995f-1bf609c15e23
+	fromColumn: si_qa_report.issue
+	toColumn: qa_issues_descriptions.qa_field_name
+
+relationship 5f227261-d76a-22f0-3a67-dfb46916ef47
+	fromColumn: si.service_id
+	toColumn: sid_list.service_id
+

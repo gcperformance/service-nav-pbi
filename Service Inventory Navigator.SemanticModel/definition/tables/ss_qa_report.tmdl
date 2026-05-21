@@ -1,0 +1,186 @@
+table ss_qa_report
+	lineageTag: 0071a4fb-0caf-4298-850a-8d23c3211f83
+
+	column department_en
+		dataType: string
+		lineageTag: a3602e2e-00d2-4133-8eb5-d6a6a4c6a0cc
+		summarizeBy: none
+		sourceColumn: department_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column department_fr
+		dataType: string
+		lineageTag: 28e1d60a-3d59-41f0-8fd5-6c2a1f57e636
+		summarizeBy: none
+		sourceColumn: department_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column org_id
+		dataType: string
+		lineageTag: 3ef6bbe6-f7df-4513-a37a-592d980c3b5c
+		summarizeBy: none
+		sourceColumn: org_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column fiscal_yr
+		dataType: string
+		lineageTag: 39326021-ea2f-4669-83b1-2c835dedfa00
+		summarizeBy: none
+		sourceColumn: fiscal_yr
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_id
+		dataType: string
+		lineageTag: 097cae77-31f8-49d8-bafc-e454f3913b50
+		summarizeBy: none
+		sourceColumn: service_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_name_en
+		dataType: string
+		lineageTag: 1472747d-67ab-4d2a-8a2f-a32532d07995
+		summarizeBy: none
+		sourceColumn: service_name_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_name_fr
+		dataType: string
+		lineageTag: 31ccb4a9-3925-46c5-89c2-81eea4a6410f
+		summarizeBy: none
+		sourceColumn: service_name_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_standard_id
+		dataType: string
+		lineageTag: 25d4c41f-6b12-46d2-8629-14290843b4fd
+		summarizeBy: none
+		sourceColumn: service_standard_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_standard_en
+		dataType: string
+		lineageTag: b62547d8-2ab9-4942-ad54-9181d6e57a38
+		summarizeBy: none
+		sourceColumn: service_standard_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_standard_fr
+		dataType: string
+		lineageTag: 1f48ee9c-e765-47f8-9c68-e14fa25234ae
+		summarizeBy: none
+		sourceColumn: service_standard_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column volume_meeting_target
+		dataType: string
+		lineageTag: 57ed4f52-3305-4bf8-a23c-e02359e726db
+		summarizeBy: none
+		sourceColumn: volume_meeting_target
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_volume
+		dataType: string
+		lineageTag: 9d4d2809-6a0e-44a0-a918-04c960d1d006
+		summarizeBy: none
+		sourceColumn: total_volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column performance
+		dataType: string
+		lineageTag: 2bb65706-8718-40be-bce7-05b0c4dcb49d
+		summarizeBy: none
+		sourceColumn: performance
+
+		annotation SummarizationSetBy = Automatic
+
+	column issue
+		dataType: string
+		lineageTag: df47e4a6-e23d-4476-9867-7ec231ce88fb
+		summarizeBy: none
+		sourceColumn: issue
+
+		annotation SummarizationSetBy = Automatic
+
+	column severity_en
+		dataType: string
+		lineageTag: 36b56bd3-23f6-46b3-87e4-2018a9d29066
+		summarizeBy: none
+		sourceColumn: severity_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column description_en
+		dataType: string
+		lineageTag: 1f178664-5dbb-411e-b696-46dbef2ecad0
+		summarizeBy: none
+		sourceColumn: description_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column action_en
+		dataType: string
+		lineageTag: 24749e73-7006-4950-8307-a216481e9bcc
+		summarizeBy: none
+		sourceColumn: action_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column severity_fr
+		dataType: string
+		lineageTag: a4481226-1bb6-4515-9320-43eaa7e681c5
+		summarizeBy: none
+		sourceColumn: severity_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column description_fr
+		dataType: string
+		lineageTag: c55bda5e-5782-45f8-9330-4f926bce62ff
+		summarizeBy: none
+		sourceColumn: description_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column action_fr
+		dataType: string
+		lineageTag: ba750774-4c92-47b0-9774-9982f4c2d339
+		summarizeBy: none
+		sourceColumn: action_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column fy_org_id_service_id_std_id = ```
+			[fiscal_yr]&"_"&[org_id]&"_"&[service_id]&"_"&[service_standard_id] 
+			```
+		lineageTag: fcabe9ba-bcf0-414c-a359-b94acc330765
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ss_qa_report = m
+		mode: import
+		queryGroup: qa
+		source =
+				let
+				    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/ss_qa_report.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true])
+				in
+				    #"Promoted Headers"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

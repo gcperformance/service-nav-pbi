@@ -1,0 +1,44 @@
+table snapshot_options
+	lineageTag: 3fd36632-d10c-4c4c-9726-fab41e347155
+
+	column options
+		dataType: string
+		lineageTag: 260b6b12-eb9d-434a-8d15-bc43e2ff1c3d
+		summarizeBy: none
+		sourceColumn: options
+
+		annotation SummarizationSetBy = Automatic
+
+	column header_colour =
+			
+			
+			SWITCH(
+			    TRUE,
+			    [options] = "live-direct", "#3095B4",
+			    [options] = "2026-01-19", "#005172",
+			    "000000"
+			)
+		lineageTag: f8310215-596c-4be0-8f59-e337b4abf634
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column header_title = "Government of Canada Service Inventory - "&[options]
+		lineageTag: c48aae16-335e-4798-a2d7-1d0ae44ae475
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition snapshot_options = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WysksS9VNySxKTS5RitWJVjIyMDLTNTDUNbRUio0FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Renamed Columns" = Table.RenameColumns(Source,{{"Column1", "options"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

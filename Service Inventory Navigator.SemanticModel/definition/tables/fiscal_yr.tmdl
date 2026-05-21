@@ -1,0 +1,25 @@
+table fiscal_yr
+	lineageTag: bf70d8aa-6838-406b-89b3-e6f3cea47c50
+
+	column fiscal_yr
+		dataType: string
+		lineageTag: 80d6342a-f32c-4fe7-b919-6a0fb5f25317
+		summarizeBy: none
+		sourceColumn: fiscal_yr
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fiscal_yr = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromColumns({List.Generate(() => 2017, each _ <= 2030, each _+1)},{"First year"}),
+				    #"Added Custom" = Table.AddColumn(Source, "fiscal_yr", each Text.From([First year])&"-"&Text.From(([First year]+1))),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Added Custom",{"fiscal_yr"})
+				in
+				    #"Removed Other Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

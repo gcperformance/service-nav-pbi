@@ -1,0 +1,99 @@
+table 'updates since 2026-01-19'
+	lineageTag: 9a0f4b51-88a5-40c3-830d-a599a328d8df
+
+	column key
+		dataType: string
+		lineageTag: 5755035b-3bda-4395-8b25-5037c3a82442
+		summarizeBy: none
+		sourceColumn: key
+
+		annotation SummarizationSetBy = Automatic
+
+	column field
+		dataType: string
+		lineageTag: b481f6e7-7845-429b-89d0-b087e7a69e7c
+		summarizeBy: none
+		sourceColumn: field
+
+		annotation SummarizationSetBy = Automatic
+
+	column base_value
+		dataType: string
+		lineageTag: de0cf510-fcdc-4cfd-8012-1222c814d019
+		summarizeBy: none
+		sourceColumn: base_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column comp_value
+		dataType: string
+		lineageTag: 9f0255e4-61b6-46d1-a0f5-3af203d2638b
+		summarizeBy: none
+		sourceColumn: comp_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column section
+		dataType: string
+		lineageTag: 051829e2-8c09-47de-943f-599fdff69e5a
+		summarizeBy: none
+		sourceColumn: section
+
+		annotation SummarizationSetBy = Automatic
+
+	column side
+		dataType: string
+		lineageTag: 6f35c1b9-9266-4a92-94f9-1c9c83c7aa0c
+		summarizeBy: none
+		sourceColumn: side
+
+		annotation SummarizationSetBy = Automatic
+
+	column base_name
+		dataType: string
+		lineageTag: 8926caa7-0a87-4922-9925-42f7fda4bd19
+		summarizeBy: none
+		sourceColumn: base_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column comp_name
+		dataType: string
+		lineageTag: 578a9a9f-880a-432b-873d-6334038013eb
+		summarizeBy: none
+		sourceColumn: comp_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column key_name
+		dataType: string
+		lineageTag: 9d00db97-6503-41df-90ac-8f0c274ff66c
+		summarizeBy: none
+		sourceColumn: key_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot
+		dataType: string
+		lineageTag: 1bbe138e-152b-47d8-abd0-6af0b84d447f
+		summarizeBy: none
+		sourceColumn: snapshot
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'updates since 2026-01-19' = m
+		mode: import
+		queryGroup: 'live data with snapshot'
+		source =
+				let
+				    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/2026-01-19_si_comparison.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true]),
+				    #"Added Custom" = Table.AddColumn(#"Promoted Headers", "snapshot", each "2026-01-19")
+				in
+				    #"Added Custom"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

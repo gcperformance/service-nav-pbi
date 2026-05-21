@@ -1,0 +1,76 @@
+table si_volume
+	lineageTag: c838ee89-f43a-4ad1-aa28-6bb325800751
+
+	column fiscal_yr
+		dataType: string
+		lineageTag: 6ceb06fb-395f-47f3-8fb6-b53749043168
+		summarizeBy: none
+		sourceColumn: fiscal_yr
+
+		annotation SummarizationSetBy = Automatic
+
+	column org_id
+		dataType: string
+		lineageTag: efccaec0-b69c-49ef-a542-c7186c93f96d
+		summarizeBy: none
+		sourceColumn: org_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_id
+		dataType: string
+		lineageTag: 9eb864c5-75cc-440f-89c3-231fb10ea6f0
+		summarizeBy: none
+		sourceColumn: service_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column channel
+		dataType: string
+		lineageTag: f9c204b9-a73e-4607-a330-8e416d9d538d
+		summarizeBy: none
+		sourceColumn: channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column volume
+		dataType: double
+		formatString: #,0
+		lineageTag: 6540889a-cad6-4451-becd-30e43ecf87b4
+		summarizeBy: sum
+		sourceColumn: volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column fy_org_id_service_id = [fiscal_yr]&"_"&[org_id]&"_"&[service_id]
+		lineageTag: fe70e5e3-22a7-4ccc-b16c-563bb0526074
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot
+		dataType: string
+		lineageTag: ebb4b9ba-395d-4734-89bf-41c9bc3cb5b7
+		summarizeBy: none
+		sourceColumn: snapshot
+
+		annotation SummarizationSetBy = Automatic
+
+	partition si_volume = m
+		mode: import
+		queryGroup: 'live data with snapshot'
+		source =
+				let
+				    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/si_vol.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"volume", type number}}),
+				    #"Added Custom" = Table.AddColumn(#"Changed Type", "snapshot", each "live-direct"),
+				    #"Appended Query" = Table.Combine({#"Added Custom", #"si_volume (2026-01-19)"})
+				in
+				    #"Appended Query"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

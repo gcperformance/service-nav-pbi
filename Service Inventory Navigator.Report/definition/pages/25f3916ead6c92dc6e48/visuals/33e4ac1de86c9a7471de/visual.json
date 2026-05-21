@@ -1,0 +1,69 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "33e4ac1de86c9a7471de",
+  "position": {
+    "x": 10.51094890510949,
+    "y": 283.79562043795625,
+    "z": 0,
+    "height": 436.78832116788323,
+    "width": 1227.4452554744526,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "si_volume"
+                    }
+                  },
+                  "Property": "service_id"
+                }
+              },
+              "queryRef": "si_volume.service_id",
+              "nativeQueryRef": "service_id"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "!measures"
+                    }
+                  },
+                  "Property": "main_channel"
+                }
+              },
+              "queryRef": "!measures.main_channel",
+              "nativeQueryRef": "main_channel"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "si_volume"
+                  }
+                },
+                "Property": "service_id"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

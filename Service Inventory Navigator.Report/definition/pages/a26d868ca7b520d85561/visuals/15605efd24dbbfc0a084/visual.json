@@ -1,0 +1,360 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "15605efd24dbbfc0a084",
+  "position": {
+    "x": 427.32307692307694,
+    "y": 470.64615384615382,
+    "z": 13000,
+    "height": 249.1076923076923,
+    "width": 852.67692307692312,
+    "tabOrder": 13000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ss"
+                    }
+                  },
+                  "Property": "fiscal_yr"
+                }
+              },
+              "queryRef": "ss.fiscal_yr",
+              "nativeQueryRef": "Fiscal year",
+              "displayName": "Fiscal year"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ss"
+                    }
+                  },
+                  "Property": "service_standard_en"
+                }
+              },
+              "queryRef": "ss.service_standard_en",
+              "nativeQueryRef": "Standard",
+              "displayName": "Standard"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ss"
+                    }
+                  },
+                  "Property": "type"
+                }
+              },
+              "queryRef": "ss.type",
+              "nativeQueryRef": "Type",
+              "displayName": "Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ss"
+                    }
+                  },
+                  "Property": "channel"
+                }
+              },
+              "queryRef": "ss.channel",
+              "nativeQueryRef": "Channel",
+              "displayName": "Channel"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ss"
+                    }
+                  },
+                  "Property": "total_volume"
+                }
+              },
+              "queryRef": "ss.total_volume",
+              "nativeQueryRef": "Total volume",
+              "displayName": "Total volume"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ss"
+                    }
+                  },
+                  "Property": "volume_meeting_target"
+                }
+              },
+              "queryRef": "ss.volume_meeting_target",
+              "nativeQueryRef": "Volume meeting target",
+              "displayName": "Volume meeting target"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ss"
+                    }
+                  },
+                  "Property": "performance"
+                }
+              },
+              "queryRef": "ss.performance",
+              "nativeQueryRef": "Performance",
+              "displayName": "Performance"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ss"
+                    }
+                  },
+                  "Property": "target"
+                }
+              },
+              "queryRef": "ss.target",
+              "nativeQueryRef": "Target",
+              "displayName": "Target"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ss"
+                    }
+                  },
+                  "Property": "target_met"
+                }
+              },
+              "queryRef": "ss.target_met",
+              "nativeQueryRef": "Target met",
+              "displayName": "Target met"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "ss"
+                  }
+                },
+                "Property": "fiscal_yr"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "266.7000627949551D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ss.service_standard_en"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "102.7076923076923D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ss.performance"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "48.4D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ss.target_met"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "100.67692307692307D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ss.volume_meeting_target"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "75D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ss.fiscal_yr"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "40D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ss.type"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "61D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ss.channel"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "86D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ss.total_volume"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "48D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ss.target"
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

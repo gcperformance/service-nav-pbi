@@ -1,0 +1,37 @@
+table timestamp
+	lineageTag: 9135f7c4-9068-4d0a-a1a0-8fcc3c3b9a68
+
+	column Timestamp
+		dataType: dateTime
+		formatString: yyyy-mm-dd h:nn:ss AM/PM
+		lineageTag: da7e20b8-3d77-4315-a26f-0cc6023a1da1
+		summarizeBy: none
+		sourceColumn: Timestamp
+
+		variation Variation
+			isDefault
+			relationship: d546a47f-2c4f-4b6c-a58a-add1ebbaf4c5
+			defaultHierarchy: LocalDateTable_d5c87641-1d0b-4bc9-9c19-673e484ce64c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	partition timestamp = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/si.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Kept Last Rows" = Table.LastN(Source, 1),
+				    #"Removed ""Timestamp:""" = Table.ReplaceValue(#"Kept Last Rows","Timestamp:","",Replacer.ReplaceText,{"Column1"}),
+				    #"Replaced _ with space" = Table.ReplaceValue(#"Removed ""Timestamp:""","_"," ",Replacer.ReplaceText,{"Column1"}),
+				    #"Converted to Date/time" = Table.TransformColumnTypes(#"Replaced _ with space",{{"Column1", type datetime}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Converted to Date/time",{"Column1"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"Column1", "Timestamp"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

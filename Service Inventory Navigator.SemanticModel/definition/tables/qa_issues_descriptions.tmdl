@@ -1,0 +1,95 @@
+table qa_issues_descriptions
+	lineageTag: 61a8744d-c161-4d4c-9552-bccf4c778e9a
+
+	column qa_field_name
+		dataType: string
+		lineageTag: 9e2f78f7-b98a-4986-b3ab-7b85fb95f085
+		summarizeBy: none
+		sourceColumn: qa_field_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column severity_en
+		dataType: string
+		lineageTag: 47cd399f-4d85-4d04-8156-a40f8f215a83
+		summarizeBy: none
+		sourceColumn: severity_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column severity_fr
+		dataType: string
+		lineageTag: d8c3e857-fa52-4177-8cc2-3d87697738fd
+		summarizeBy: none
+		sourceColumn: severity_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column table
+		dataType: string
+		lineageTag: e89042b3-bb1b-4200-9dd2-d4bd1610882a
+		summarizeBy: none
+		sourceColumn: table
+
+		annotation SummarizationSetBy = Automatic
+
+	column description_en
+		dataType: string
+		lineageTag: 978822d3-c6f4-497b-9cd2-fa2c40404fce
+		summarizeBy: none
+		sourceColumn: description_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column action_en
+		dataType: string
+		lineageTag: a7e235c1-521c-4a0d-aee3-7b974a0dfd83
+		summarizeBy: none
+		sourceColumn: action_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column description_fr
+		dataType: string
+		lineageTag: 23771c94-3ab1-44da-8393-d4e1dbebdfbc
+		summarizeBy: none
+		sourceColumn: description_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column action_fr
+		dataType: string
+		lineageTag: 6e8bbdf9-6e7e-4c29-ad07-b270bb91c0df
+		summarizeBy: none
+		sourceColumn: action_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column severity_colour =
+			
+			SWITCH(
+			    TRUE,
+			    left([severity_en], 1) = "0", "#E17980",
+			    left([severity_en], 1) = "1", "#CCDC00",
+			    left([severity_en], 1) = "2", "#63CECA",
+			    "000000"
+			)
+		lineageTag: b4f2813b-0466-4120-9f37-3a77ac0cbea4
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition qa_issues_descriptions = m
+		mode: import
+		queryGroup: qa
+		source =
+				let
+				    Source = Csv.Document(Web.Contents("https://raw.githubusercontent.com/gcperformance/service-data/refs/heads/master/src/qa_issues_descriptions.csv"),[Delimiter=",", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+				in
+				    #"Promoted Headers"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

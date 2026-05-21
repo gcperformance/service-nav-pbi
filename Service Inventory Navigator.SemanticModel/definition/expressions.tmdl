@@ -1,0 +1,121 @@
+expression 'si (2026-01-19)' =
+		let
+		    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/2026-01-19_si.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+		    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+		    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true]),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"num_applications_total", Int64.Type}}),
+		    #"Added Custom" = Table.AddColumn(#"Changed Type", "snapshot", each "2026-01-19")
+		in
+		    #"Added Custom"
+	lineageTag: 5121cab5-71ef-4503-ad35-ba33a6fe21a5
+	queryGroup: '2026-01-19 snapshot'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'ss (2026-01-19)' =
+		let
+		    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/2026-01-19_ss.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+		    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+		    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true]),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"volume_meeting_target", Int64.Type}, {"total_volume", Int64.Type}, {"target", type number}, {"performance", type number}}),
+		    #"Added Custom" = Table.AddColumn(#"Changed Type", "snapshot", each "2026-01-19")
+		in
+		    #"Added Custom"
+	lineageTag: 0a71dc9f-0e36-4683-b8c8-6277f038caee
+	queryGroup: '2026-01-19 snapshot'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'service_fte_spending (2026-01-19)' =
+		let
+		    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/2026-01-19_service_fte_spending.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+		    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+		    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true]),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"measure", type number}}),
+		    #"Added Custom" = Table.AddColumn(#"Changed Type", "snapshot", each "2026-01-19")
+		in
+		    #"Added Custom"
+	lineageTag: 741d43e9-f4ea-4719-bdf3-b7596fe92e6a
+	queryGroup: '2026-01-19 snapshot'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'si_volume (2026-01-19)' =
+		let
+		    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/2026-01-19_si_vol.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+		    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+		    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true]),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"volume", type number}}),
+		    #"Added Custom" = Table.AddColumn(#"Changed Type", "snapshot", each "2026-01-19")
+		in
+		    #"Added Custom"
+	lineageTag: a2c04c43-ca93-4bf5-90b0-f7760ad3faaf
+	queryGroup: '2026-01-19 snapshot'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'maf_all (2026-01-19)' =
+		let
+		    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/2026-01-19_maf_all.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+		    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+		    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true]),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"service_with_std_count", type number}, {"service_count_maf1", type number}, {"maf1_score", type number}, {"service_standard_met", type number}, {"service_standard_count", type number}, {"maf2_score", type number}, {"online_e2e_count", type number}, {"service_count_maf5", type number}, {"maf5_score", type number}, {"activated_point_count", type number}, {"point_count", type number}, {"maf6_score", type number}, {"improved_services_count", type number}, {"service_count_maf8", type number}, {"maf8_score", type number}}),
+		    #"Added Custom" = Table.AddColumn(#"Changed Type", "snapshot", each "2026-01-19")
+		in
+		    #"Added Custom"
+	lineageTag: 2149b22c-5bbe-4a46-ba51-12197126894a
+	queryGroup: '2026-01-19 snapshot'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression populated_orgs =
+		let
+		    Source = List.Combine({si_orgs, ss_orgs}),
+		    #"Removed Duplicates" = List.Distinct(Source),
+		    #"Sorted Items" = List.Sort(#"Removed Duplicates",Order.Ascending),
+		    #"Converted to Table" = Table.FromList(#"Sorted Items", Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+		    #"Renamed Columns" = Table.RenameColumns(#"Converted to Table",{{"Column1", "populated_orgs"}})
+		in
+		    #"Renamed Columns"
+	lineageTag: 30f9bc23-967d-4626-a141-3ea1dbce1e71
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression si_orgs =
+		let
+		    Source = si,
+		    org_id = Source[org_id]
+		in
+		    org_id
+	lineageTag: 2330a6d1-556a-4539-bde3-8a31fa741e87
+	queryGroup: 'live data with snapshot'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = List
+
+expression ss_orgs =
+		let
+		    Source = ss,
+		    org_id = Source[org_id]
+		in
+		    org_id
+	lineageTag: 2b9a1c92-863c-4dca-a4dc-c0521c98615e
+	queryGroup: 'live data with snapshot'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = List
+

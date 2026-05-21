@@ -1,0 +1,186 @@
+table !measures
+	lineageTag: 3eae87b5-6c96-4707-b96f-b4a5454b5748
+
+	measure total_services_count_pc = CALCULATE(sum(maf_all[service_count_maf1]))/CALCULATE(sum(maf_all[service_count_maf1]), all(si))
+		lineageTag: 06521967-3b76-4d27-8a82-07ab89223855
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure services_with_std_pc_maf1 = CALCULATE(sum(maf_all[service_with_std_count])/sum(maf_all[service_count_maf1]))
+		formatString: 0%;-0%;0%
+		lineageTag: fcd4434b-2e1d-4a20-94dd-cef16bee8748
+
+	measure standards_met_pc_maf2 = calculate([standards_met]/[standards_with_performance])
+		formatString: 0%;-0%;0%
+		lineageTag: 63181218-a785-4e04-a959-c568c7422cdb
+
+	measure standards_with_performance = calculate(DISTINCTCOUNT(ss[fy_org_id_service_id_std_id]), filter(ss, ss[target_met]<>"NA"))
+		formatString: 0
+		lineageTag: 5f8b7c54-b979-4c96-ba27-a225edabe653
+
+	measure total_applications =
+			
+			--volume calcs
+			VAR max_vol = calculate(MAX(si_volume[volume]))
+			VAR total_vol = calculate(SUM(si_volume[volume]))
+			VAR channels_with_max = CALCULATE(SELECTEDVALUE(si_volume[channel], concatenatex(si_volume, si_volume[channel], ", ")), filter(si_volume, si_volume[volume]=max_vol))
+			VAR max_vol_pc = max_vol/total_vol
+			
+			--number formatter
+			VAR interactions = max_vol
+			VAR interactions_mag = LOG(
+			    interactions,
+			    10
+			)
+			VAR no_format = "#"
+			VAR K_format = "#,.0K"
+			VAR M_format = "#,,.0M"
+			VAR B_format = "#,,,.0B"
+			
+			VAR Mag_format =
+			SWITCH(
+			    TRUE,
+			    interactions_mag < 3, no_format,
+			    interactions_mag < 6, K_format,
+			    interactions_mag < 9, M_format,
+			    B_format
+			)
+			
+			--result
+			var result = if(total_vol = 0, "No volume", channels_with_max & " (" & format(max_vol, Mag_format) &"; "& format(max_vol_pc, "0%")&")")
+			
+			RETURN total_vol
+		formatString: #,0
+		lineageTag: 8587f344-3fcf-4b46-8b46-727ad4429c7b
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure total_applications_all_orgs = calculate(sum(si_volume[volume]), REMOVEFILTERS(dept), REMOVEFILTERS(sid_list))
+		lineageTag: 76536d50-dadf-42f9-815d-c040381c73b9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure total_applications_pc_all_orgs = [total_applications]/[total_applications_all_orgs]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 54f21b41-f796-4e4c-85fc-05466181f104
+
+	measure service_count = CALCULATE(DISTINCTCOUNT(si[fy_org_id_service_id]))
+		formatString: 0
+		lineageTag: 9357848e-6b87-441f-b4bb-1e948b6a1a1b
+
+	measure standards_met = calculate(DISTINCTCOUNT(ss[fy_org_id_service_id_std_id]), filter(ss, ss[target_met]="Y"))
+		formatString: 0
+		lineageTag: b4bcc76d-3875-424f-9c0c-b30396555397
+
+	measure services_with_std_maf1 = CALCULATE(sum(maf_all[service_with_std_count]))
+		formatString: 0
+		lineageTag: 15e7887b-24df-4b3e-bdc2-ea26c36f2f0d
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure si_qa_issues_count =
+			
+			VAR qa_count = calculate(COUNT(si_qa_report[fy_org_id_service_id]))
+			
+			RETURN
+			    qa_count
+		formatString: 0
+		lineageTag: b7a13f1a-603f-42ca-afd7-99f955a93916
+
+	measure ss_qa_issues_count =
+			
+			VAR qa_count = calculate(COUNT(ss_qa_report[fy_org_id_service_id_std_id]))
+			
+			RETURN
+			    qa_count
+		formatString: 0
+		lineageTag: 87a6129e-7c7d-4808-b633-6425ec660087
+
+	measure main_channel =
+			
+			
+			--volume calcs
+			VAR max_vol = calculate(MAX(si_volume[volume]))
+			VAR total_vol = calculate(SUM(si_volume[volume]))
+			VAR channels_with_max = CALCULATE(SELECTEDVALUE(si_volume[channel], concatenatex(si_volume, si_volume[channel], ", ")), filter(si_volume, si_volume[volume]=max_vol))
+			VAR max_vol_pc = divide(max_vol, total_vol, 0)
+			
+			--number formatter
+			VAR interactions = max_vol
+			VAR interactions_mag = LOG(
+			    interactions,
+			    10
+			)
+			VAR no_format = "#"
+			VAR K_format = "#,.0K"
+			VAR M_format = "#,,.0M"
+			VAR B_format = "#,,,.0B"
+			
+			VAR Mag_format =
+			SWITCH(
+			    TRUE,
+			    interactions_mag < 3, no_format,
+			    interactions_mag < 6, K_format,
+			    interactions_mag < 9, M_format,
+			    B_format
+			)
+			
+			--result
+			var result = if(total_vol = 0, "no volume", channels_with_max & " (" & format(max_vol_pc, "0%")&")")
+			
+			RETURN result
+		lineageTag: e32a4dce-b897-4ed0-bb0a-c894bbf47afe
+
+	measure max_applications =
+			
+			--volume calcs
+			VAR max_vol = calculate(MAX(si_volume[volume]))
+			VAR total_vol = calculate(SUM(si_volume[volume]))
+			VAR channels_with_max = CALCULATE(SELECTEDVALUE(si_volume[channel], concatenatex(si_volume, si_volume[channel], ", ")), filter(si_volume, si_volume[volume]=max_vol))
+			VAR max_vol_pc = max_vol/total_vol
+			
+			--number formatter
+			VAR interactions = max_vol
+			VAR interactions_mag = LOG(
+			    interactions,
+			    10
+			)
+			VAR no_format = "#"
+			VAR K_format = "#,.0K"
+			VAR M_format = "#,,.0M"
+			VAR B_format = "#,,,.0B"
+			
+			VAR Mag_format =
+			SWITCH(
+			    TRUE,
+			    interactions_mag < 3, no_format,
+			    interactions_mag < 6, K_format,
+			    interactions_mag < 9, M_format,
+			    B_format
+			)
+			
+			--result
+			var result = if(total_vol = 0, "No volume", channels_with_max & " (" & format(max_vol, Mag_format) &"; "& format(max_vol_pc, "0%")&")")
+			
+			RETURN max_vol
+		lineageTag: 54c6c456-d34e-4404-bce6-851765545c35
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		formatString: 0
+		lineageTag: 73d1f317-c041-49e1-83aa-7793e3aa5b0b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition !measures = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = b387a8d5a5d4442eaee9fbbf4cf6f85d
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

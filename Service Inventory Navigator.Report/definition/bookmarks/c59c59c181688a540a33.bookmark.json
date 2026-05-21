@@ -1,0 +1,1015 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Normal",
+  "name": "c59c59c181688a540a33",
+  "options": {
+    "targetVisualNames": [],
+    "suppressActiveSection": true,
+    "suppressDisplay": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "3944add2de9b91bca488",
+    "sections": {
+      "3944add2de9b91bca488": {
+        "filters": {
+          "byExpr": [
+            {
+              "name": "23f4abede90f59155050",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dept"
+                    }
+                  },
+                  "Property": "department_en"
+                }
+              },
+              "howCreated": 5
+            },
+            {
+              "name": "bcc5a078293a3619cc82",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sid_list"
+                    }
+                  },
+                  "Property": "service_id"
+                }
+              },
+              "howCreated": 5
+            },
+            {
+              "name": "fd5c0a956a136effad3a",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fiscal_yr"
+                    }
+                  },
+                  "Property": "fiscal_yr"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "f536ba3979b4c4962e9b",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dept"
+                    }
+                  },
+                  "Property": "org_id"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "5675a22bb079e13c7963",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dept"
+                    }
+                  },
+                  "Property": "department_en"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "9899b3b0b2baec0c1d95",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dept"
+                    }
+                  },
+                  "Property": "department_fr"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "77cdbf2c5a198e77eee6",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sid_list"
+                    }
+                  },
+                  "Property": "service_id"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "41ecd90eb6b15654a3e9",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sid_list"
+                    }
+                  },
+                  "Property": "service_name_en"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "71d3cebd3a2d6938ca72",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "sid_list"
+                    }
+                  },
+                  "Property": "service_name_fr"
+                }
+              },
+              "howCreated": 1
+            },
+            {
+              "name": "5583ae68947473529314",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "program_list"
+                    }
+                  },
+                  "Property": "program_id"
+                }
+              },
+              "howCreated": 1
+            }
+          ]
+        },
+        "visualContainers": {
+          "612c02938cd1101aae00": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ade49696b9c9daf9129a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "si"
+                        }
+                      },
+                      "Property": "fiscal_yr"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e4e63a0364d6ec14c64c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "si"
+                        }
+                      },
+                      "Property": "service_name_en"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c7652fb935f7ac950748",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "si"
+                        }
+                      },
+                      "Property": "department_en"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8f568d176aad46c74005",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "si"
+                        }
+                      },
+                      "Property": "service_description_en"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1e5918ad90760c04a968",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "si"
+                        }
+                      },
+                      "Property": "service_scope"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9157267949313d07b9fe",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "!measures"
+                        }
+                      },
+                      "Property": "total_applications"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4c30fe4dc2743f295083",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dept"
+                        }
+                      },
+                      "Property": "org_id"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "84f0f8e7e92da83196c1",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "sid_list"
+                        }
+                      },
+                      "Property": "service_id"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "!measures"
+                        }
+                      },
+                      "Property": "total_applications"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "2c1b3aa0d863708b0db0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e9a21e4fecc5e49f3e70",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss"
+                        }
+                      },
+                      "Property": "fiscal_yr"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "adc85eefbd8dac9dd2e4",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss"
+                        }
+                      },
+                      "Property": "service_standard_en"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "46e26753eb60c705c00c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss"
+                        }
+                      },
+                      "Property": "service_standard_id"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e7069d3271dc2221dd0c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss"
+                        }
+                      },
+                      "Property": "target_met"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d60d60ecff0ba7a9373f",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss"
+                        }
+                      },
+                      "Property": "performance"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "229eafa50ba79d5f801b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss"
+                        }
+                      },
+                      "Property": "target"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a91afa66686e40e07d80",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss"
+                        }
+                      },
+                      "Property": "total_volume"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7492e8cf1dfdc17364d4",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss"
+                        }
+                      },
+                      "Property": "volume_meeting_target"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a30fa4d758757fe566df",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dept"
+                        }
+                      },
+                      "Property": "org_id"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e621652af01f904fd5d2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "sid_list"
+                        }
+                      },
+                      "Property": "service_id"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss"
+                        }
+                      },
+                      "Property": "fiscal_yr"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "eeebba701e4b89b7807a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f2057b714e905a6c22b4",
+                  "type": "TopN",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "subquery",
+                        "Expression": {
+                          "Subquery": {
+                            "Query": {
+                              "Version": 2,
+                              "From": [
+                                {
+                                  "Name": "s",
+                                  "Entity": "service_fte_spending",
+                                  "Type": 0
+                                }
+                              ],
+                              "Select": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "s"
+                                      }
+                                    },
+                                    "Property": "report_yr"
+                                  },
+                                  "Name": "field"
+                                }
+                              ],
+                              "OrderBy": [
+                                {
+                                  "Direction": 2,
+                                  "Expression": {
+                                    "Aggregation": {
+                                      "Expression": {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "s"
+                                            }
+                                          },
+                                          "Property": "report_yr"
+                                        }
+                                      },
+                                      "Function": 3
+                                    }
+                                  }
+                                }
+                              ],
+                              "Top": 2
+                            }
+                          }
+                        },
+                        "Type": 2
+                      },
+                      {
+                        "Name": "s",
+                        "Entity": "service_fte_spending",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "s"
+                                    }
+                                  },
+                                  "Property": "report_yr"
+                                }
+                              }
+                            ],
+                            "Table": {
+                              "SourceRef": {
+                                "Source": "subquery"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "service_fte_spending"
+                        }
+                      },
+                      "Property": "report_yr"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "81de874711aa3889e5a1",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "service_fte_spending"
+                        }
+                      },
+                      "Property": "spending_fte"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "efada077f8e68f863f40",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "service_fte_spending"
+                            }
+                          },
+                          "Property": "measure"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d182171fc0cbe8226096",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "program_list"
+                        }
+                      },
+                      "Property": "program_en"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ba9b17ddb9f009c3ecdf",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "service_fte_spending"
+                        }
+                      },
+                      "Property": "program_id"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6a547b9699ba0400b124",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "service_fte_spending"
+                        }
+                      },
+                      "Property": "measure_fy_planned_actual"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "program_list"
+                        }
+                      },
+                      "Property": "program_en"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "service_fte_spending"
+                        }
+                      },
+                      "Property": "program_id"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "program_list"
+                        }
+                      },
+                      "Property": "program_en"
+                    }
+                  }
+                ],
+                "Columns": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "service_fte_spending"
+                        }
+                      },
+                      "Property": "spending_fte"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "service_fte_spending"
+                        }
+                      },
+                      "Property": "measure_fy_planned_actual"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "service_fte_spending.program_id"
+                      ],
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "service_fte_spending"
+                              }
+                            },
+                            "Property": "program_id"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "program_list.program_en"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": null,
+                    "children": [
+                      {
+                        "identityValues": [
+                          {
+                            "Literal": {
+                              "Value": "'BGV04'"
+                            }
+                          }
+                        ],
+                        "isToggled": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "0fd58f924430fae18cd8": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "645216e2fc535b3277ff",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "snapshot_options"
+                        }
+                      },
+                      "Property": "options"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "s",
+                                "Entity": "snapshot_options",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "s"
+                                            }
+                                          },
+                                          "Property": "options"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'2026-01-19'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "snapshot_options"
+                        }
+                      },
+                      "Property": "options"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "b97b085a04c72050be93": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "f4a93a6408ea3e4576a0": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "018746b95d4a27765b87": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3faa6d8e5bec6a04e7e4",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "timestamp"
+                            }
+                          },
+                          "Property": "Timestamp"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "timestamp"
+                            }
+                          },
+                          "Property": "Timestamp"
+                        }
+                      },
+                      "Function": 3
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "89847b6752303c606d61": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "bdbbb42dee0c2c6861e0": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "5e0bcd52db5f15637803": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
