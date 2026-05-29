@@ -4,7 +4,7 @@
   "artifacts": [
     {
       "report": {
-        "path": "Service Inventory Navigator.Report"
+        "path": "si-nav.Report"
       }
     }
   ],

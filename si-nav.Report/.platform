@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "SemanticModel",
-    "displayName": "Service Inventory Navigator"
+    "type": "Report",
+    "displayName": "si-nav"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "34f8e5ae-96c5-4587-af9f-8d5dfe111f30"
+    "logicalId": "f835f1c7-39bf-4314-9409-163edad35a8d"
   }
 }
