@@ -8,4 +8,6 @@ Power BI project for visualizing and exploring [gcperformance/service-data](http
 4. Refresh the data
 
 ## Troubleshooting
+If pop-ups regarding "Access Web Content", privacy labels, or information sensitivity appear during a data refresh, select "Anonymous" or ignore the popup. All data included are public.
+
 There can be an issue with the file path length if extracted within a user's documents. It may be possible to solve this by extracting to the C:\ drive directly.
