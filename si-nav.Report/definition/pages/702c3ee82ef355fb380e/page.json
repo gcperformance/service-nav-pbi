@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "702c3ee82ef355fb380e",
-  "displayName": "Summary Data Quality Review",
+  "displayName": "Data Quality Summary",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
@@ -130,7 +130,7 @@
     {
       "source": "efa5258ac3a17a2d55db",
       "target": "a18531be1edd7082b35d",
-      "type": "DataFilter"
+      "type": "NoFilter"
     },
     {
       "source": "efa5258ac3a17a2d55db",
@@ -145,7 +145,32 @@
     {
       "source": "e1f0d70f39141fe1f45e",
       "target": "ffdb3957172a309ab765",
+      "type": "NoFilter"
+    },
+    {
+      "source": "e1f0d70f39141fe1f45e",
+      "target": "efa5258ac3a17a2d55db",
+      "type": "NoFilter"
+    },
+    {
+      "source": "a18531be1edd7082b35d",
+      "target": "ffdb3957172a309ab765",
       "type": "DataFilter"
+    },
+    {
+      "source": "ffdb3957172a309ab765",
+      "target": "a18531be1edd7082b35d",
+      "type": "DataFilter"
+    },
+    {
+      "source": "ffdb3957172a309ab765",
+      "target": "e1f0d70f39141fe1f45e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "efa5258ac3a17a2d55db",
+      "target": "e1f0d70f39141fe1f45e",
+      "type": "NoFilter"
     }
   ]
 }

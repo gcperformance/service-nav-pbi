@@ -88,6 +88,7 @@ relationship b8706989-859b-9f80-995f-1bf609c15e23
 	toColumn: qa_issues_descriptions.qa_field_name
 
 relationship 5f227261-d76a-22f0-3a67-dfb46916ef47
+	crossFilteringBehavior: bothDirections
 	fromColumn: si.service_id
 	toColumn: sid_list.service_id
 

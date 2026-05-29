@@ -45,26 +45,6 @@
                           "Entity": "si"
                         }
                       },
-                      "Property": "service_fee"
-                    }
-                  },
-                  "Function": 3
-                }
-              },
-              "queryRef": "Min(si.service_fee)",
-              "nativeQueryRef": "Collects a user fee?",
-              "displayName": "Collects a user fee?"
-            },
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "si"
-                        }
-                      },
                       "Property": "service_type"
                     }
                   },
@@ -74,26 +54,6 @@
               "queryRef": "Min(si.service_type)",
               "nativeQueryRef": "Service type",
               "displayName": "Service type"
-            },
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "si"
-                        }
-                      },
-                      "Property": "last_service_improvement"
-                    }
-                  },
-                  "Function": 3
-                }
-              },
-              "queryRef": "Min(si.last_service_improvement)",
-              "nativeQueryRef": "Year of latest service improvement",
-              "displayName": "Year of latest service improvement"
             },
             {
               "field": {
@@ -125,6 +85,46 @@
                           "Entity": "si"
                         }
                       },
+                      "Property": "last_service_improvement"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(si.last_service_improvement)",
+              "nativeQueryRef": "Year of latest service improvement",
+              "displayName": "Year of latest service improvement"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "si"
+                        }
+                      },
+                      "Property": "service_fee"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(si.service_fee)",
+              "nativeQueryRef": "Collects a user fee?",
+              "displayName": "Collects a user fee?"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "si"
+                        }
+                      },
                       "Property": "automated_decision_system"
                     }
                   },
@@ -132,8 +132,8 @@
                 }
               },
               "queryRef": "Min(si.automated_decision_system)",
-              "nativeQueryRef": "Automated decision system",
-              "displayName": "Automated decision system"
+              "nativeQueryRef": "Uses automated decision systems?",
+              "displayName": "Uses automated decision systems?"
             }
           ]
         }

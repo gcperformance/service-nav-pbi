@@ -21579,88 +21579,409 @@ cultureInfo en-CA
 			          }
 			        }
 			      ]
+			    },
+			    "sid_list.service_id_name_en": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sid_list",
+			          "ConceptualProperty": "service_id_name_en"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "service id name en": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "service_id_name_en": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "en": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "name en": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "id name en": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "maintenance id name en": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "examination id name en": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "svc id name en": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service identification name en": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service identity name en": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service identifier name en": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "identification name en": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "identity name en": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "identifier name en": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "package id name en": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "sid_list.service_id_name_fr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sid_list",
+			          "ConceptualProperty": "service_id_name_fr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "service id name fr": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "service_id_name_fr": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maintenance id name fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "examination id name fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "svc id name fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service identification name fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service identity name fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "service identifier name fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "package id name fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "repair id name fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "benefit id name fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "servicing id name fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "measure.multiple_services_selected": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "multiple_services_selected"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "multiple services selected": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "multiple_services_selected": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "multiple amenity selected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "multiple assistance selected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "multiple service selected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "multiple public amenity selected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.604
+			          }
+			        }
+			      ]
+			    },
+			    "measure.multiple_services_selected_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "multiple_services_selected_count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "multiple services selected count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "multiple_services_selected_count": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "multiple service selected amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "multiple amenity selected count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "multiple assistance selected count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "multiple service selected count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "multiple public amenity selected count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "maf_all_has_si": {
-			      "Binding": {
-			        "ConceptualEntity": "maf_all"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "maf_all": {
-			          "Target": {
-			            "Entity": "maf_all"
-			          }
-			        },
-			        "si": {
-			          "Target": {
-			            "Entity": "si"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "maf_all"
-			            },
-			            "Object": {
-			              "Role": "si"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "maf_all_have_si"
-			        }
-			      ]
-			    },
-			    "si_has_sid_list": {
-			      "Binding": {
-			        "ConceptualEntity": "si"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "si": {
-			          "Target": {
-			            "Entity": "si"
-			          }
-			        },
-			        "sid_list": {
-			          "Target": {
-			            "Entity": "sid_list"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "si"
-			            },
-			            "Object": {
-			              "Role": "sid_list"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "si_have_sid_lists"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sid_list"
-			            },
-			            "Object": {
-			              "Role": "si"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sid_lists_have_si"
-			        }
-			      ]
-			    },
 			    "si_has_fiscal_yr": {
 			      "Binding": {
 			        "ConceptualEntity": "si"
@@ -21902,6 +22223,138 @@ cultureInfo en-CA
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "SSs_have_si"
+			        }
+			      ]
+			    },
+			    "si_has_measure_multiple_services_selected_count": {
+			      "Binding": {
+			        "ConceptualEntity": "si"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "si": {
+			          "Target": {
+			            "Entity": "si"
+			          }
+			        },
+			        "measure.multiple_services_selected_count": {
+			          "Target": {
+			            "Entity": "measure.multiple_services_selected_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "si"
+			            },
+			            "Object": {
+			              "Role": "measure.multiple_services_selected_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "si_have_multiple_services_selected_count"
+			        }
+			      ]
+			    },
+			    "si_has_measure_multiple_services_selected": {
+			      "Binding": {
+			        "ConceptualEntity": "si"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "si": {
+			          "Target": {
+			            "Entity": "si"
+			          }
+			        },
+			        "measure.multiple_services_selected": {
+			          "Target": {
+			            "Entity": "measure.multiple_services_selected"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "si"
+			            },
+			            "Object": {
+			              "Role": "measure.multiple_services_selected"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "si_have_multiple_services_selected"
+			        }
+			      ]
+			    },
+			    "sid_list_has_service_id_name_fr": {
+			      "Binding": {
+			        "ConceptualEntity": "sid_list"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sid_list": {
+			          "Target": {
+			            "Entity": "sid_list"
+			          }
+			        },
+			        "sid_list.service_id_name_fr": {
+			          "Target": {
+			            "Entity": "sid_list.service_id_name_fr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sid_list"
+			            },
+			            "Object": {
+			              "Role": "sid_list.service_id_name_fr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sid_lists_have_service_id_name_frs"
+			        }
+			      ]
+			    },
+			    "sid_list_has_service_id_name_en": {
+			      "Binding": {
+			        "ConceptualEntity": "sid_list"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sid_list": {
+			          "Target": {
+			            "Entity": "sid_list"
+			          }
+			        },
+			        "sid_list.service_id_name_en": {
+			          "Target": {
+			            "Entity": "sid_list.service_id_name_en"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sid_list"
+			            },
+			            "Object": {
+			              "Role": "sid_list.service_id_name_en"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sid_lists_have_service_id_name_ens"
 			        }
 			      ]
 			    },
@@ -28783,6 +29236,85 @@ cultureInfo en-CA
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "SSs_have_fiscal_yrs"
+			        }
+			      ]
+			    },
+			    "si_has_sid_list": {
+			      "Binding": {
+			        "ConceptualEntity": "si"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "si": {
+			          "Target": {
+			            "Entity": "si"
+			          }
+			        },
+			        "sid_list": {
+			          "Target": {
+			            "Entity": "sid_list"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "si"
+			            },
+			            "Object": {
+			              "Role": "sid_list"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "si_have_sid_lists"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sid_list"
+			            },
+			            "Object": {
+			              "Role": "si"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sid_lists_have_si"
+			        }
+			      ]
+			    },
+			    "maf_all_has_si": {
+			      "Binding": {
+			        "ConceptualEntity": "maf_all"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "maf_all": {
+			          "Target": {
+			            "Entity": "maf_all"
+			          }
+			        },
+			        "si": {
+			          "Target": {
+			            "Entity": "si"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "maf_all"
+			            },
+			            "Object": {
+			              "Role": "si"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "maf_all_have_si"
 			        }
 			      ]
 			    },

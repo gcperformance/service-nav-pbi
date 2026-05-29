@@ -79,6 +79,18 @@ table sid_list
 
 		annotation SummarizationSetBy = Automatic
 
+	column service_id_name_en = [service_id]&" "&[service_name_en]
+		lineageTag: b3454ec6-a423-40b2-bdeb-10f37a59de03
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_id_name_fr = [service_id]&" "&[service_name_fr]
+		lineageTag: f38fbe0a-7bfb-433a-b3e5-f2907ca2eea9
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition sid_list = m
 		mode: import
 		source =

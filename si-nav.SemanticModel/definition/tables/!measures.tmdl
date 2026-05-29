@@ -167,6 +167,27 @@ table !measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure multiple_services_selected =
+			
+			
+			VAR service_count = CALCULATE(DISTINCTCOUNT(sid_list[service_id]))
+			VAR warning = if([service_count]>1, "rgba(122, 0, 0, 1)", "rgba(0, 122, 0, 1)")
+			--VAR warning = if([service_count]>1, "Use the filter to select only one service, or use a drill-through from a different page to see data", "")
+			
+			RETURN warning
+		lineageTag: d8e4bd23-9cad-41b7-8106-1d979760d70d
+
+	measure multiple_services_selected_count =
+			
+			
+			VAR service_count = DISTINCTCOUNT(sid_list[service_id_name_en])
+			VAR warning = if([service_count]>1, "rgba(122, 0, 0, 1)", "rgba(0, 122, 0, 1)")
+			--VAR warning = if([service_count]>1, "Use the filter to select only one service, or use a drill-through from a different page to see data", "")
+			
+			RETURN [service_count]
+		formatString: 0
+		lineageTag: a3b2e9e1-0dfc-4899-91ab-bf59cd4a5b85
+
 	column Column
 		formatString: 0
 		lineageTag: 73d1f317-c041-49e1-83aa-7793e3aa5b0b

@@ -391,5 +391,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "50b7e931984603a9f1b7",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sid_list"
+              }
+            },
+            "Property": "service_id"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f67278352df391281e3c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sid_list"
+              }
+            },
+            "Property": "service_name_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a9c8c345f50652522cd7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "total_applications"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

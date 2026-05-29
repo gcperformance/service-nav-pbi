@@ -39,7 +39,7 @@
     {
       "source": "650af2b24aab91789dbb",
       "target": "0514233a00269d6088e7",
-      "type": "HighlightFilter"
+      "type": "DataFilter"
     },
     {
       "source": "0514233a00269d6088e7",
@@ -60,6 +60,16 @@
       "source": "650af2b24aab91789dbb",
       "target": "ecd39014676e7e3f5371",
       "type": "NoFilter"
+    },
+    {
+      "source": "ecd39014676e7e3f5371",
+      "target": "30f67ec90201b85e1099",
+      "type": "DataFilter"
+    },
+    {
+      "source": "ecd39014676e7e3f5371",
+      "target": "650af2b24aab91789dbb",
+      "type": "DataFilter"
     }
   ]
 }
