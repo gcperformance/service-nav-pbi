@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "2c1b3aa0d863708b0db0",
   "position": {
     "x": 0,
@@ -815,5 +815,149 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "328938a29bb45de6ee48",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "fiscal_yr"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "38f1e011b58f0bebf225",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sid_list"
+              }
+            },
+            "Property": "service_id"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a4a519a8557fcbfdf2b5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "service_standard_id"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0a576d0ccd5306864ad2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "service_standard_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "352f8ae79926f2a02dc8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "volume_meeting_target"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ad94af53caeba4f315fe",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "total_volume"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "072ce3803ca13a2f12d3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "performance"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "014680844c160645d1fd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "target"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c6c48be06476930de7fb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "target_met"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f1187577b406ef47b809",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "org_id"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

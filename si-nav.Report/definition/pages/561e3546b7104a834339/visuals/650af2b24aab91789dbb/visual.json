@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "650af2b24aab91789dbb",
   "position": {
     "x": 640.4972804972806,
@@ -67,16 +67,16 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "!measures"
+                    "Entity": "sid_list"
                   }
                 },
-                "Property": "total_applications"
+                "Property": "service_id"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
@@ -395,7 +395,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "50b7e931984603a9f1b7",
+        "name": "069042b474772bc3c38e",
         "field": {
           "Column": {
             "Expression": {
@@ -409,7 +409,7 @@
         "type": "Categorical"
       },
       {
-        "name": "f67278352df391281e3c",
+        "name": "17fcab09766b9baa798d",
         "field": {
           "Column": {
             "Expression": {
@@ -423,7 +423,7 @@
         "type": "Categorical"
       },
       {
-        "name": "a9c8c345f50652522cd7",
+        "name": "e3da069e565660390fd8",
         "field": {
           "Measure": {
             "Expression": {

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "eeebba701e4b89b7807a",
   "position": {
     "x": 0,
@@ -1120,6 +1120,81 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "f3d174ae969aedd52ca8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "service_fte_spending"
+              }
+            },
+            "Property": "spending_fte"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e09cdebd611c47ba73ec",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "service_fte_spending"
+              }
+            },
+            "Property": "measure_fy_planned_actual"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "eba146c3943b4b713909",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "service_fte_spending"
+              }
+            },
+            "Property": "program_id"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0354acfc89bf7ada6ca2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "program_list"
+              }
+            },
+            "Property": "program_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ae8affd114b09187a04a",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "service_fte_spending"
+                  }
+                },
+                "Property": "measure"
+              }
+            },
+            "Function": 3
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

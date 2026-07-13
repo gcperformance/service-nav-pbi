@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "612c02938cd1101aae00",
   "position": {
     "x": 0,
@@ -651,5 +651,126 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1df34db3c42241625979",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si"
+              }
+            },
+            "Property": "fiscal_yr"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "aa487cfd2033c85dc85c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sid_list"
+              }
+            },
+            "Property": "service_id"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "708c331ee0acc12c89cd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si"
+              }
+            },
+            "Property": "service_name_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "09249d52843ef5dc53b9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "org_id"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "bb405472e73a217b2680",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si"
+              }
+            },
+            "Property": "department_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c63396de2f2c9fb889e0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si"
+              }
+            },
+            "Property": "service_scope"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "4cc1c0afb8116c75cb5f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si"
+              }
+            },
+            "Property": "service_description_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ad72ae097b2c6949e052",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "si"
+                  }
+                },
+                "Property": "num_applications_total"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

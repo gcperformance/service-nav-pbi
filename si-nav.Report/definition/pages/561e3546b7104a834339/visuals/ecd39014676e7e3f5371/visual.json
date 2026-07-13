@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "ecd39014676e7e3f5371",
   "position": {
     "x": 0,
@@ -643,107 +643,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "523cbc2489451673869a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "service_count"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "e4801968f9dc6fd09069",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "services_with_std_maf1"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "ee51360a1d71be076a7f",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "services_with_std_pc_maf1"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "c2d762e8c07b6e3dbcea",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "standards_with_performance"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "bfa915b5314996f213e2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "standards_met"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "a0e9e5c744f1bab5c2f2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "standards_met_pc_maf2"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "c34d64314c416c05cddf",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fiscal_yr"
-              }
-            },
-            "Property": "fiscal_yr"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

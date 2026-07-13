@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "15605efd24dbbfc0a084",
   "position": {
     "x": 427.32307692307694,
@@ -163,7 +163,7 @@
                     "Entity": "ss"
                   }
                 },
-                "Property": "fiscal_yr"
+                "Property": "performance"
               }
             },
             "direction": "Descending"

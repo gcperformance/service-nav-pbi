@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "726c8fb054041bf79536",
   "position": {
     "x": 854.64615384615388,
@@ -586,34 +586,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "175142e085721b730ff8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "standards_with_performance"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "dbeb2627e30ac2053563",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "standards_met"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

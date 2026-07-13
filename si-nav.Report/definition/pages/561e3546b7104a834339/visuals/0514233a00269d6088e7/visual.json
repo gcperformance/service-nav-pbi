@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "0514233a00269d6088e7",
   "position": {
     "x": 640.4972804972806,
@@ -668,51 +668,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "8803bb0e4dd47497e55f",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fiscal_yr"
-              }
-            },
-            "Property": "fiscal_yr"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "821a392eca54d423d2f8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "total_applications"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "55b551d05f5e3c2bde19",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "total_applications_all_orgs"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
