@@ -152,6 +152,18 @@
               "program_list.program_en"
             ],
             "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "program_list"
+                    }
+                  },
+                  "Property": "program_en"
+                }
+              }
+            ],
             "isPinned": true
           }
         ],

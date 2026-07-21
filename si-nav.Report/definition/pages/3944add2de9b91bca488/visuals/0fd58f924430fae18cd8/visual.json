@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "0fd58f924430fae18cd8",
   "position": {
     "x": 1117.3211567732114,
@@ -81,7 +81,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'live-direct'"
+                                "Value": "'2026-01-19'"
                               }
                             }
                           ]
@@ -258,5 +258,23 @@
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c4f790b0e81e61004eaa",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "snapshot_options"
+              }
+            },
+            "Property": "options"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

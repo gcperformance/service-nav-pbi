@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "612c02938cd1101aae00",
   "position": {
     "x": 0,
@@ -140,18 +140,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "si"
-                      }
-                    },
-                    "Property": "num_applications_total"
+                  "SourceRef": {
+                    "Entity": "!measures"
                   }
                 },
-                "Function": 0
+                "Property": "total_applications"
               }
             },
             "direction": "Descending"
@@ -651,5 +646,126 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2664199cde9ad3ddbc21",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si"
+              }
+            },
+            "Property": "fiscal_yr"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "608babd5d19a591190ba",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sid_list"
+              }
+            },
+            "Property": "service_id"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "73702ea4929944530176",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si"
+              }
+            },
+            "Property": "service_name_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ec6fd12f1cc755e38d4e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "org_id"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "17655d762887843aed22",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si"
+              }
+            },
+            "Property": "department_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b8fde970702232909cd5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si"
+              }
+            },
+            "Property": "service_scope"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d62802a60a1cd05c492c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si"
+              }
+            },
+            "Property": "service_description_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "1768241a6b33bed8e73c",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "si"
+                  }
+                },
+                "Property": "num_applications_total"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

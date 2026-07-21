@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
-  "displayName": "Normal",
+  "displayName": "Reset filters",
   "name": "c59c59c181688a540a33",
   "options": {
     "targetVisualNames": [],
@@ -9,13 +9,28 @@
   },
   "explorationState": {
     "version": "1.3",
-    "activeSection": "3944add2de9b91bca488",
+    "activeSection": "24ba84d680d1ec5d1d25",
     "sections": {
-      "3944add2de9b91bca488": {
+      "24ba84d680d1ec5d1d25": {
         "filters": {
           "byExpr": [
             {
-              "name": "23f4abede90f59155050",
+              "name": "73c8178829cf00712583",
+              "type": "Categorical",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "qa_issues_descriptions"
+                    }
+                  },
+                  "Property": "qa_field_name"
+                }
+              },
+              "howCreated": 5
+            },
+            {
+              "name": "2444c080234bd918881a",
               "type": "Categorical",
               "expression": {
                 "Column": {
@@ -30,52 +45,7 @@
               "howCreated": 5
             },
             {
-              "name": "bcc5a078293a3619cc82",
-              "type": "Categorical",
-              "expression": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "sid_list"
-                    }
-                  },
-                  "Property": "service_id"
-                }
-              },
-              "howCreated": 5
-            },
-            {
-              "name": "fd5c0a956a136effad3a",
-              "type": "Categorical",
-              "expression": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "fiscal_yr"
-                    }
-                  },
-                  "Property": "fiscal_yr"
-                }
-              },
-              "howCreated": 1
-            },
-            {
-              "name": "f536ba3979b4c4962e9b",
-              "type": "Categorical",
-              "expression": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "dept"
-                    }
-                  },
-                  "Property": "org_id"
-                }
-              },
-              "howCreated": 1
-            },
-            {
-              "name": "5675a22bb079e13c7963",
+              "name": "b9b556ad7951168199b1",
               "type": "Categorical",
               "expression": {
                 "Column": {
@@ -90,7 +60,7 @@
               "howCreated": 1
             },
             {
-              "name": "9899b3b0b2baec0c1d95",
+              "name": "e800b2f34106c6cc5d68",
               "type": "Categorical",
               "expression": {
                 "Column": {
@@ -105,79 +75,100 @@
               "howCreated": 1
             },
             {
-              "name": "77cdbf2c5a198e77eee6",
+              "name": "ce89fe47403ee307eb35",
               "type": "Categorical",
               "expression": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "sid_list"
+                      "Entity": "dept"
                     }
                   },
-                  "Property": "service_id"
+                  "Property": "org_id"
                 }
               },
               "howCreated": 1
             },
             {
-              "name": "41ecd90eb6b15654a3e9",
+              "name": "fa12bfcd34ab60b72ca1",
               "type": "Categorical",
               "expression": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "sid_list"
+                      "Entity": "qa_issues_descriptions"
                     }
                   },
-                  "Property": "service_name_en"
+                  "Property": "severity_en"
                 }
               },
               "howCreated": 1
             },
             {
-              "name": "71d3cebd3a2d6938ca72",
+              "name": "61e00a320370b954569a",
               "type": "Categorical",
               "expression": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "sid_list"
+                      "Entity": "qa_issues_descriptions"
                     }
                   },
-                  "Property": "service_name_fr"
+                  "Property": "severity_fr"
                 }
               },
               "howCreated": 1
             },
             {
-              "name": "5583ae68947473529314",
+              "name": "d01b3dbec70fcf682b21",
               "type": "Categorical",
               "expression": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "program_list"
+                      "Entity": "dept"
                     }
                   },
-                  "Property": "program_id"
+                  "Property": "org_id"
                 }
               },
-              "howCreated": 1
+              "howCreated": 5
             }
           ]
         },
         "visualContainers": {
-          "612c02938cd1101aae00": {
+          "4685a72a1bd064aa4e81": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "6fde08451a32a3388247": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "bd909a3a24dbccebfe41",
+                  "name": "5e69b8b3324c2713452b",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "si"
+                          "Entity": "si_qa_report"
+                        }
+                      },
+                      "Property": "issue"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "1e4950cd36b07c6e0219",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "si_qa_report"
                         }
                       },
                       "Property": "fiscal_yr"
@@ -186,13 +177,28 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "4c66c18516fc34f6d7cd",
+                  "name": "b580b7b420bb80b916ed",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "si"
+                          "Entity": "sid_list"
+                        }
+                      },
+                      "Property": "service_id"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9ac5ae8fb70b5eb89100",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "si_qa_report"
                         }
                       },
                       "Property": "service_name_en"
@@ -201,91 +207,61 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "14a6e8a09eca176970ac",
+                  "name": "e7e290f10e5500a4a8e2",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "si"
+                          "Entity": "qa_issues_descriptions"
                         }
                       },
-                      "Property": "department_en"
+                      "Property": "severity_en"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "a7a337962318836e2730",
+                  "name": "bd8940f50442980aa700",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "si"
+                          "Entity": "si_qa_report"
                         }
                       },
-                      "Property": "service_description_en"
+                      "Property": "description_en"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "4a1cd154f8cf0de25126",
+                  "name": "32e43b008c90eaa1110b",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "si"
+                          "Entity": "si_qa_report"
                         }
                       },
-                      "Property": "service_scope"
+                      "Property": "action_en"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "b6e5397a4b9ff02ad01e",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "!measures"
-                        }
-                      },
-                      "Property": "total_applications"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "4d2cabd14f4d1d18c015",
+                  "name": "9b5a50905dba63173159",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "dept"
+                          "Entity": "si_qa_report"
                         }
                       },
-                      "Property": "org_id"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "1aeee9a47f38e5257547",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "sid_list"
-                        }
-                      },
-                      "Property": "service_id"
+                      "Property": "context"
                     }
                   },
                   "howCreated": 0
@@ -294,388 +270,6 @@
             },
             "singleVisual": {
               "visualType": "tableEx",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "!measures"
-                        }
-                      },
-                      "Property": "total_applications"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "2c1b3aa0d863708b0db0": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "a1f50012d0a2c9d07d56",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "ss"
-                        }
-                      },
-                      "Property": "fiscal_yr"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "0d2054dfdc266cc07847",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "ss"
-                        }
-                      },
-                      "Property": "service_standard_en"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "ca53a73e467905f44fc7",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "ss"
-                        }
-                      },
-                      "Property": "service_standard_id"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "e855886044073d29241c",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "ss"
-                        }
-                      },
-                      "Property": "target_met"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "ecafb4c3d29b04f60e01",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "ss"
-                        }
-                      },
-                      "Property": "performance"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "65169620f6703aeaa14a",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "ss"
-                        }
-                      },
-                      "Property": "target"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "71f1ed92e805f9b1eec0",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "ss"
-                        }
-                      },
-                      "Property": "total_volume"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "7c19f64506be75979b27",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "ss"
-                        }
-                      },
-                      "Property": "volume_meeting_target"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "0aa822f884dfccfe922c",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "dept"
-                        }
-                      },
-                      "Property": "org_id"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "371cc355c9ecf64b21ba",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "sid_list"
-                        }
-                      },
-                      "Property": "service_id"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "tableEx",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "ss"
-                        }
-                      },
-                      "Property": "fiscal_yr"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "eeebba701e4b89b7807a": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "f2057b714e905a6c22b4",
-                  "type": "TopN",
-                  "filter": {
-                    "Version": 2,
-                    "From": [
-                      {
-                        "Name": "subquery",
-                        "Expression": {
-                          "Subquery": {
-                            "Query": {
-                              "Version": 2,
-                              "From": [
-                                {
-                                  "Name": "s",
-                                  "Entity": "service_fte_spending",
-                                  "Type": 0
-                                }
-                              ],
-                              "Select": [
-                                {
-                                  "Column": {
-                                    "Expression": {
-                                      "SourceRef": {
-                                        "Source": "s"
-                                      }
-                                    },
-                                    "Property": "report_yr"
-                                  },
-                                  "Name": "field"
-                                }
-                              ],
-                              "OrderBy": [
-                                {
-                                  "Direction": 2,
-                                  "Expression": {
-                                    "Aggregation": {
-                                      "Expression": {
-                                        "Column": {
-                                          "Expression": {
-                                            "SourceRef": {
-                                              "Source": "s"
-                                            }
-                                          },
-                                          "Property": "report_yr"
-                                        }
-                                      },
-                                      "Function": 3
-                                    }
-                                  }
-                                }
-                              ],
-                              "Top": 2
-                            }
-                          }
-                        },
-                        "Type": 2
-                      },
-                      {
-                        "Name": "s",
-                        "Entity": "service_fte_spending",
-                        "Type": 0
-                      }
-                    ],
-                    "Where": [
-                      {
-                        "Condition": {
-                          "In": {
-                            "Expressions": [
-                              {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Source": "s"
-                                    }
-                                  },
-                                  "Property": "report_yr"
-                                }
-                              }
-                            ],
-                            "Table": {
-                              "SourceRef": {
-                                "Source": "subquery"
-                              }
-                            }
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "service_fte_spending"
-                        }
-                      },
-                      "Property": "report_yr"
-                    }
-                  },
-                  "howCreated": 1
-                },
-                {
-                  "name": "4ebc15a46d563d64e76f",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "service_fte_spending"
-                        }
-                      },
-                      "Property": "spending_fte"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "806867237aca008479a2",
-                  "type": "Advanced",
-                  "expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "service_fte_spending"
-                            }
-                          },
-                          "Property": "measure"
-                        }
-                      },
-                      "Function": 3
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "82048dc117c638d35ff3",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "program_list"
-                        }
-                      },
-                      "Property": "program_en"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "99105ffb8ddff84654e6",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "service_fte_spending"
-                        }
-                      },
-                      "Property": "program_id"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "985ff1fcd04e9cb40fd6",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "service_fte_spending"
-                        }
-                      },
-                      "Property": "measure_fy_planned_actual"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "pivotTable",
               "objects": {},
               "orderBy": [
                 {
@@ -684,125 +278,66 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "program_list"
+                          "Entity": "qa_issues_descriptions"
                         }
                       },
-                      "Property": "program_en"
+                      "Property": "severity_en"
                     }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Rows": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "service_fte_spending"
-                        }
-                      },
-                      "Property": "program_id"
-                    }
-                  },
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "program_list"
-                        }
-                      },
-                      "Property": "program_en"
-                    }
-                  }
-                ],
-                "Columns": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "service_fte_spending"
-                        }
-                      },
-                      "Property": "spending_fte"
-                    }
-                  },
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "service_fte_spending"
-                        }
-                      },
-                      "Property": "measure_fy_planned_actual"
-                    }
-                  }
-                ]
-              },
-              "expansionStates": [
-                {
-                  "roles": [
-                    "Rows"
-                  ],
-                  "levels": [
-                    {
-                      "queryRefs": [
-                        "service_fte_spending.program_id"
-                      ],
-                      "identityKeys": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "service_fte_spending"
-                              }
-                            },
-                            "Property": "program_id"
-                          }
-                        }
-                      ],
-                      "isPinned": true
-                    },
-                    {
-                      "queryRefs": [
-                        "program_list.program_en"
-                      ],
-                      "isCollapsed": true,
-                      "isPinned": true
-                    }
-                  ],
-                  "root": {
-                    "identityValues": null,
-                    "children": [
-                      {
-                        "identityValues": [
-                          {
-                            "Literal": {
-                              "Value": "'BGV04'"
-                            }
-                          }
-                        ],
-                        "isToggled": true
-                      }
-                    ]
                   }
                 }
               ]
             }
           },
-          "0fd58f924430fae18cd8": {
+          "8c1145e00bf47475963f": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "937667f8deff81fc6668": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "c6576862aaa6a66efa0d",
+                  "name": "0f46316215d78ae8d1b2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "!measures"
+                        }
+                      },
+                      "Property": "si_qa_issues_count"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "3ed1466e3e8096de1397",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "!measures"
+                        }
+                      },
+                      "Property": "ss_qa_issues_count"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f35446f2cb80b8e7e6d1",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "snapshot_options"
+                          "Entity": "qa_issues_descriptions"
                         }
                       },
-                      "Property": "options"
+                      "Property": "severity_en"
                     }
                   },
                   "howCreated": 0
@@ -810,117 +345,30 @@
               ]
             },
             "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "general": [
-                    {
-                      "properties": {
-                        "filter": {
-                          "filter": {
-                            "Version": 2,
-                            "From": [
-                              {
-                                "Name": "s",
-                                "Entity": "snapshot_options",
-                                "Type": 0
-                              }
-                            ],
-                            "Where": [
-                              {
-                                "Condition": {
-                                  "In": {
-                                    "Expressions": [
-                                      {
-                                        "Column": {
-                                          "Expression": {
-                                            "SourceRef": {
-                                              "Source": "s"
-                                            }
-                                          },
-                                          "Property": "options"
-                                        }
-                                      }
-                                    ],
-                                    "Values": [
-                                      [
-                                        {
-                                          "Literal": {
-                                            "Value": "'2026-01-19'"
-                                          }
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    }
-                  ],
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ],
-                  "selection": [
-                    {
-                      "properties": {
-                        "strictSingleSelect": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "true"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "snapshot_options"
+                          "Entity": "!measures"
                         }
                       },
-                      "Property": "options"
+                      "Property": "si_qa_issues_count"
                     }
                   }
-                ]
-              }
+                }
+              ]
             }
           },
-          "b97b085a04c72050be93": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "f4a93a6408ea3e4576a0": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "018746b95d4a27765b87": {
+          "d46258a533da650f9bc1": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "21857bf3fc62aeaff415",
+                  "name": "fe941ba9a87005675050",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -966,21 +414,160 @@
               ]
             }
           },
-          "89847b6752303c606d61": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "bdbbb42dee0c2c6861e0": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "5e0bcd52db5f15637803": {
+          "e8deff71f5e4dc8b7ba6": {
             "singleVisual": {
               "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "ec84946a1e98fa0da723": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "bed87c00e88843eca393",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss_qa_report"
+                        }
+                      },
+                      "Property": "fiscal_yr"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "eb9749ce30a018b4b9c3",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "sid_list"
+                        }
+                      },
+                      "Property": "service_id"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "53499c536ddeb8098d89",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss_qa_report"
+                        }
+                      },
+                      "Property": "service_name_en"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "db5d185b4253d5984701",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss"
+                        }
+                      },
+                      "Property": "service_standard_id"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "46842c9b0ba6095c2d52",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss_qa_report"
+                        }
+                      },
+                      "Property": "service_standard_en"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "21d12ff97de5021a0563",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "qa_issues_descriptions"
+                        }
+                      },
+                      "Property": "severity_en"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "685d91df6aa846c0e465",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss_qa_report"
+                        }
+                      },
+                      "Property": "description_en"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a943ff45704b008b4279",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ss_qa_report"
+                        }
+                      },
+                      "Property": "action_en"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "qa_issues_descriptions"
+                        }
+                      },
+                      "Property": "severity_en"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "f988a1b46170917acd2d": {
+            "singleVisual": {
+              "visualType": "shape",
               "objects": {}
             }
           }

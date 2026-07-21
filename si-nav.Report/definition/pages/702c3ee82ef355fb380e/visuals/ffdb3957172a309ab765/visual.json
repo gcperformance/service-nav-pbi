@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "ffdb3957172a309ab765",
   "position": {
     "x": 732.02274573517468,
@@ -606,5 +606,70 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3dc10a1aa09e4c0b9752",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "department_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6954a5ee8a8451204664",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "qa_issues_descriptions"
+              }
+            },
+            "Property": "severity_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "662f650fc8377eb601e5",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dept"
+                  }
+                },
+                "Property": "org_id"
+              }
+            },
+            "Function": 3
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e1d772f072d49b9cc660",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "ss_qa_issues_count"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

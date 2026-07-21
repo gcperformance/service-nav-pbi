@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "6fde08451a32a3388247",
   "position": {
     "x": 0,
@@ -948,6 +948,104 @@
         },
         "type": "Categorical",
         "howCreated": "User"
+      },
+      {
+        "name": "9aaaf35387b030703b2d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si_qa_report"
+              }
+            },
+            "Property": "fiscal_yr"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "df898f3fa697866c0983",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "sid_list"
+              }
+            },
+            "Property": "service_id"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "87b44432080241337b38",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si_qa_report"
+              }
+            },
+            "Property": "service_name_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "2566a805b7e06bb9093b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "qa_issues_descriptions"
+              }
+            },
+            "Property": "severity_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e325465b121c8251e71a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si_qa_report"
+              }
+            },
+            "Property": "description_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a61af9bab837014c242e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si_qa_report"
+              }
+            },
+            "Property": "action_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d6b40d132eb0b880543d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "si_qa_report"
+              }
+            },
+            "Property": "context"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

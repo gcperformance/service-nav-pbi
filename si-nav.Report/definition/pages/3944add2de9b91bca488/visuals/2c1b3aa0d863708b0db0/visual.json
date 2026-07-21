@@ -168,7 +168,7 @@
                     "Entity": "ss"
                   }
                 },
-                "Property": "performance"
+                "Property": "fiscal_yr"
               }
             },
             "direction": "Descending"

@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "018746b95d4a27765b87",
   "position": {
-    "x": 802.11827007943509,
+    "x": 660.90836653386452,
     "y": 0,
     "z": 6000,
-    "height": 41.80052956751986,
-    "width": 249.67343336275377,
+    "height": 41.816733067729082,
+    "width": 249.88047808764941,
     "tabOrder": 6000
   },
   "visual": {
@@ -357,5 +357,28 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8585b6c93722e05c8757",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "timestamp"
+                  }
+                },
+                "Property": "Timestamp"
+              }
+            },
+            "Function": 3
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
