@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "d565093b16fa1d56c640",
   "position": {
     "x": 0,
@@ -958,6 +958,62 @@
         },
         "howCreated": "User",
         "isHiddenInViewMode": true
+      },
+      {
+        "name": "e3695dd0a5d0648341cc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "key"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "930a62c6183181218649",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "field"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "74ce973708b487d4d8c2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "base_value"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "85a7224ad0484de785d9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "comp_value"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

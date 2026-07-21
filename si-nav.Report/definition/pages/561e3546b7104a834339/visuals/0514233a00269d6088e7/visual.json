@@ -668,5 +668,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2cf0deae0309d5d85170",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fiscal_yr"
+              }
+            },
+            "Property": "fiscal_yr"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "239fd4e0045de0853c9c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "total_applications_all_orgs"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "19c321cfa59c61659088",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "total_applications"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

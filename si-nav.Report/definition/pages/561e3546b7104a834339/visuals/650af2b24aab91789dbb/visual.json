@@ -67,16 +67,16 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "sid_list"
+                    "Entity": "!measures"
                   }
                 },
-                "Property": "service_id"
+                "Property": "total_applications"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -300,6 +300,27 @@
                   "Value": "'Arial'"
                 }
               }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'(all / selected reporting periods)'"
+                }
+              }
+            },
+            "italic": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
@@ -395,7 +416,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "069042b474772bc3c38e",
+        "name": "c1e4ec0c07a05d4c8820",
         "field": {
           "Column": {
             "Expression": {
@@ -409,7 +430,7 @@
         "type": "Categorical"
       },
       {
-        "name": "17fcab09766b9baa798d",
+        "name": "2e02443b0521774164a8",
         "field": {
           "Column": {
             "Expression": {
@@ -423,7 +444,7 @@
         "type": "Categorical"
       },
       {
-        "name": "e3da069e565660390fd8",
+        "name": "5f7e344c6e8d2633be87",
         "field": {
           "Measure": {
             "Expression": {
@@ -435,6 +456,21 @@
           }
         },
         "type": "Advanced"
+      },
+      {
+        "name": "f40d602c49991003db39",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fiscal_yr"
+              }
+            },
+            "Property": "fiscal_yr"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
       }
     ]
   }

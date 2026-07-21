@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "efa5258ac3a17a2d55db",
   "position": {
     "x": 732.02274573517468,
@@ -402,51 +402,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "1d7670490e1ca65ea6d9",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "qa_issues_descriptions"
-              }
-            },
-            "Property": "severity_en"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "2d42d3320aadee1b62ed",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "qa_issues_descriptions"
-              }
-            },
-            "Property": "qa_field_name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "1b3f546e0b74ead990c6",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "ss_qa_issues_count"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

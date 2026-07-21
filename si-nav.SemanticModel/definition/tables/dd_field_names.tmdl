@@ -1,0 +1,132 @@
+table dd_field_names
+	lineageTag: f313d2d9-cf80-42d2-9565-e3aca6454145
+
+	column resource_name
+		dataType: string
+		lineageTag: d223df15-ea40-45ef-b040-e63a1a666209
+		summarizeBy: none
+		sourceColumn: resource_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column title_en
+		dataType: string
+		lineageTag: 80246f3a-7186-427d-baab-c88d63a7467f
+		summarizeBy: none
+		sourceColumn: title_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column title_fr
+		dataType: string
+		lineageTag: ab36ef3d-1c8e-4890-834a-e249fe171cc7
+		summarizeBy: none
+		sourceColumn: title_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Field ID'
+		dataType: string
+		lineageTag: f942666e-de3a-437f-91b9-1dac0b2eed18
+		summarizeBy: none
+		sourceColumn: Field ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column datastore_type
+		dataType: string
+		lineageTag: 85b5cf5d-0ecf-4aee-8c5d-13de2ec8b1b9
+		summarizeBy: none
+		sourceColumn: datastore_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column obligation_en
+		dataType: string
+		lineageTag: fb3daea3-b55e-40af-821d-d4a49ac6ef9e
+		summarizeBy: none
+		sourceColumn: obligation_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column obligation_fr
+		dataType: string
+		lineageTag: df0b6678-ab81-4f47-b9af-a9be62ac33f7
+		summarizeBy: none
+		sourceColumn: obligation_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column Field
+		dataType: string
+		lineageTag: 589253d0-5d08-4710-bdb9-9e1af8df8a3e
+		summarizeBy: none
+		sourceColumn: Field
+
+		annotation SummarizationSetBy = Automatic
+
+	column label_fr
+		dataType: string
+		lineageTag: 5c3d64f0-192e-450c-8d25-5c1be3c69c63
+		summarizeBy: none
+		sourceColumn: label_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 1c07ffef-41ee-49e7-bdd7-167ec4d7884a
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column description_fr
+		dataType: string
+		lineageTag: fdfaafaa-aa02-4aab-8b8e-abc1ebe7edf2
+		summarizeBy: none
+		sourceColumn: description_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column validation_en
+		dataType: string
+		lineageTag: ab4257c1-38d3-488d-9bf5-53e62745efab
+		summarizeBy: none
+		sourceColumn: validation_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column validation_fr
+		dataType: string
+		lineageTag: 83d46ac0-cacd-4d77-b0d2-4c9a9a4cab4a
+		summarizeBy: none
+		sourceColumn: validation_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column character_limit
+		dataType: int64
+		formatString: 0
+		lineageTag: 663668d7-4cc9-46ad-a0f2-961316a2321d
+		summarizeBy: sum
+		sourceColumn: character_limit
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dd_field_names = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/download/service_data-3baad78/dd_field_names.csv"),[Delimiter=";", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"resource_name", type text}, {"title_en", type text}, {"title_fr", type text}, {"id", type text}, {"datastore_type", type text}, {"obligation_en", type text}, {"obligation_fr", type text}, {"label_en", type text}, {"label_fr", type text}, {"description_en", type text}, {"description_fr", type text}, {"validation_en", type text}, {"validation_fr", type text}, {"character_limit", Int64.Type}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"label_en", "Field"}, {"id", "Field ID"}, {"description_en", "Description"}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Renamed Columns", each ([Field] <> "" and [Field] <> "Automated Decision System Description (French)" and [Field] <> "Comments on Online Services - Client Interaction Points (French)" and [Field] <> "Comments on the service standard channel (French)" and [Field] <> "Comments on the service standard in general (French)" and [Field] <> "Program Name (French)" and [Field] <> "Service Description (French)" and [Field] <> "Service Name (French)" and [Field] <> "Service Standard (French)" and [Field] <> "Special Remarks (French)" and [Field] <> "URL to Real-Time Performance Results (French)" and [Field] <> "URL to Service (French)" and [Field] <> "URL to Service Standards and Targets (French)"))
+				in
+				    #"Filtered Rows"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

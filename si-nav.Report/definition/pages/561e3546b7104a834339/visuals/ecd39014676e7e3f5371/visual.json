@@ -643,5 +643,107 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ffd245bdb057d8c4185b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "service_count"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d460187302d093900c93",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "services_with_std_maf1"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "226064b32bc10d320045",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "services_with_std_pc_maf1"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "56970db07bc13adb532a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "standards_with_performance"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "63beed3ad2e8ac72c942",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "standards_met"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "fc0fa846de50d0b94452",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "standards_met_pc_maf2"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d64b1355c990c141eb36",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fiscal_yr"
+              }
+            },
+            "Property": "fiscal_yr"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

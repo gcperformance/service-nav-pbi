@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
-  "name": "ec84946a1e98fa0da723",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "b4e1d5cd6c8321ae7129",
   "position": {
-    "x": 0,
-    "y": 451.27538586515033,
-    "z": 3000,
-    "height": 268.26969943135663,
-    "width": 1280,
-    "tabOrder": 3000
+    "x": 0.99921935987509758,
+    "y": 0,
+    "z": 0,
+    "height": 720.43715846994542,
+    "width": 1279.000780640125,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "tableEx",
@@ -20,112 +20,42 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "ss_qa_report"
+                      "Entity": "dd_field_names"
                     }
                   },
-                  "Property": "fiscal_yr"
+                  "Property": "Field"
                 }
               },
-              "queryRef": "ss_qa_report.fiscal_yr",
-              "nativeQueryRef": "fiscal_yr"
+              "queryRef": "dd_field_names.label_en",
+              "nativeQueryRef": "Field"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "sid_list"
+                      "Entity": "dd_field_names"
                     }
                   },
-                  "Property": "service_id"
+                  "Property": "Field ID"
                 }
               },
-              "queryRef": "sid_list.service_id",
-              "nativeQueryRef": "service_id"
+              "queryRef": "dd_field_names.id",
+              "nativeQueryRef": "Field ID"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "ss_qa_report"
+                      "Entity": "dd_field_names"
                     }
                   },
-                  "Property": "service_name_en"
+                  "Property": "Description"
                 }
               },
-              "queryRef": "ss_qa_report.service_name_en",
-              "nativeQueryRef": "service_name_en1"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "ss"
-                    }
-                  },
-                  "Property": "service_standard_id"
-                }
-              },
-              "queryRef": "ss.service_standard_id",
-              "nativeQueryRef": "service_standard_id1"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "ss_qa_report"
-                    }
-                  },
-                  "Property": "service_standard_en"
-                }
-              },
-              "queryRef": "ss_qa_report.service_standard_en",
-              "nativeQueryRef": "service_standard_en"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "qa_issues_descriptions"
-                    }
-                  },
-                  "Property": "severity_en"
-                }
-              },
-              "queryRef": "qa_issues_descriptions.severity_en",
-              "nativeQueryRef": "severity_en"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "ss_qa_report"
-                    }
-                  },
-                  "Property": "description_en"
-                }
-              },
-              "queryRef": "ss_qa_report.description_en",
-              "nativeQueryRef": "description_en1"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "ss_qa_report"
-                    }
-                  },
-                  "Property": "action_en"
-                }
-              },
-              "queryRef": "ss_qa_report.action_en",
-              "nativeQueryRef": "action_en1"
+              "queryRef": "dd_field_names.description_en",
+              "nativeQueryRef": "Description"
             }
           ]
         }
@@ -137,10 +67,10 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "qa_issues_descriptions"
+                    "Entity": "dd_field_names"
                   }
                 },
-                "Property": "severity_en"
+                "Property": "Field ID"
               }
             },
             "direction": "Ascending"
@@ -149,6 +79,33 @@
       }
     },
     "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Arial'"
+                }
+              }
+            },
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'fixedWidth'"
+                }
+              }
+            },
+            "defaultColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "90D"
+                }
+              }
+            }
+          }
+        }
+      ],
       "columnWidth": [
         {
           "properties": {
@@ -295,34 +252,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "79D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "qa_issues_descriptions.severity_en"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "48D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "dept.org_id"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "75D"
                 }
               }
@@ -421,6 +350,20 @@
             "value": {
               "expr": {
                 "Literal": {
+                  "Value": "48D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "dept.org_id"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
                   "Value": "76.40310077519379D"
                 }
               }
@@ -449,21 +392,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "75D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "si_qa_report.service_id"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "496D"
+                  "Value": "160.17960099572758D"
                 }
               }
             }
@@ -477,7 +406,21 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "635D"
+                  "Value": "79D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "qa_issues_descriptions.severity_en"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "345.9216000181393D"
                 }
               }
             }
@@ -491,7 +434,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "787D"
+                  "Value": "309.0138053074943D"
                 }
               }
             }
@@ -505,7 +448,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "290D"
+                  "Value": "195.82359414315533D"
                 }
               }
             }
@@ -519,13 +462,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "75D"
+                  "Value": "436.4283250710939D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "ss_qa_report.fiscal_yr"
+            "metadata": "updates since 2026-01-19.base_value"
           }
         },
         {
@@ -533,13 +476,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "160.06454108799315D"
+                  "Value": "445.7090550439573D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "ss_qa_report.service_name_en"
+            "metadata": "updates since 2026-01-19.comp_value"
           }
         },
         {
@@ -547,13 +490,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "240.9770419357091D"
+                  "Value": "715.5398440561469D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "ss_qa_report.service_standard_en"
+            "metadata": "dd_field_names.description_en"
           }
         },
         {
@@ -561,13 +504,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "273.5520916258581D"
+                  "Value": "246.12021857923497D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "ss_qa_report.description_en"
+            "metadata": "dd_field_names.label_en"
           }
         },
         {
@@ -575,13 +518,26 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "200.3570542440323D"
+                  "Value": "274D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "ss_qa_report.action_en"
+            "metadata": "dd_field_names.id"
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
           }
         }
       ],
@@ -656,52 +612,6 @@
               }
             ],
             "metadata": "qa_issues_descriptions.severity_en"
-          }
-        }
-      ],
-      "columnHeaders": [
-        {
-          "properties": {
-            "autoSizeColumnWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "grid": [
-        {
-          "properties": {
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "total": [
-        {
-          "properties": {
-            "totals": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
           }
         }
       ],
@@ -870,40 +780,13 @@
       ]
     },
     "visualContainerObjects": {
-      "border": [
+      "stylePreset": [
         {
           "properties": {
-            "show": {
+            "name": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "width": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "'Minimal'"
                 }
               }
             }
@@ -913,13 +796,6 @@
       "title": [
         {
           "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Service Standards and Performance Results'"
-                }
-              }
-            },
             "show": {
               "expr": {
                 "Literal": {
@@ -958,17 +834,24 @@
                   "Value": "'Arial'"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Data dictionary field reference'"
+                }
+              }
             }
           }
         }
       ],
-      "stylePreset": [
+      "subTitle": [
         {
           "properties": {
-            "name": {
+            "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'Minimal'"
+                  "Value": "'Arial'"
                 }
               }
             }
@@ -988,13 +871,40 @@
           }
         }
       ],
-      "subTitle": [
+      "background": [
         {
           "properties": {
-            "fontFamily": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'Arial'"
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -1029,5 +939,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "040ad1fd5460a002117e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dd_field_names"
+              }
+            },
+            "Property": "Field"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "4eab76d5284b89a7bacd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dd_field_names"
+              }
+            },
+            "Property": "Field ID"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "220e521d7039525c65ee",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dd_field_names"
+              }
+            },
+            "Property": "Description"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "7479addb81e34b3efdfb",
   "position": {
-    "x": 1117.3211567732114,
+    "x": 1116.9301611665387,
     "y": 0,
     "z": 2000,
-    "height": 41.887366818873666,
-    "width": 162.67884322678842,
+    "height": 42.240982348426705,
+    "width": 163.06983883346123,
     "tabOrder": 1000
   },
   "visual": {
@@ -252,11 +252,24 @@
         }
       ]
     },
-    "syncGroup": {
-      "groupName": "options",
-      "fieldChanges": true,
-      "filterChanges": true
-    },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8428f6b689b0a76b9e95",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "snapshot_options"
+              }
+            },
+            "Property": "options"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }
