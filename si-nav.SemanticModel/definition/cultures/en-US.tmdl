@@ -1,0 +1,1181 @@
+cultureInfo en-US
+	translations
+		model Model
+			table ss
+				caption: ss
+				column fiscal_yr
+					caption: fiscal_yr
+				column org_id
+					caption: org_id
+				column service_id
+					caption: service_id
+				column service_name_en
+					caption: service_name_en
+				column service_name_fr
+					caption: service_name_fr
+				column service_standard_id
+					caption: service_standard_id
+				column service_standard_en
+					caption: service_standard_en
+				column service_standard_fr
+					caption: service_standard_fr
+				column type
+					caption: type
+				column gcss_tool_fiscal_yr
+					caption: gcss_tool_fiscal_yr
+				column channel
+					caption: channel
+				column channel_comments_en
+					caption: channel_comments_en
+				column channel_comments_fr
+					caption: channel_comments_fr
+				column target_type
+					caption: target_type
+				column target
+					caption: target
+				column volume_meeting_target
+					caption: volume_meeting_target
+				column total_volume
+					caption: total_volume
+				column performance
+					caption: performance
+				column comments_en
+					caption: comments_en
+				column comments_fr
+					caption: comments_fr
+				column target_met
+					caption: target_met
+				column standards_targets_uri_en
+					caption: standards_targets_uri_en
+				column standards_targets_uri_fr
+					caption: standards_targets_uri_fr
+				column performance_results_uri_en
+					caption: performance_results_uri_en
+				column performance_results_uri_fr
+					caption: performance_results_uri_fr
+				column org_name_variant
+					caption: org_name_variant
+				column department_en
+					caption: department_en
+				column department_fr
+					caption: department_fr
+				column fy_org_id_service_id
+					caption: fy_org_id_service_id
+				column fy_org_id_service_id_std_id
+					caption: fy_org_id_service_id_std_id
+				column snapshot
+					caption: snapshot
+			table service_fte_spending
+				caption: service_fte_spending
+				column service_id
+					caption: service_id
+				column fiscal_yr
+					caption: fiscal_yr
+				column program_id
+					caption: program_id
+				column org_id
+					caption: org_id
+				column latest_si_yr
+					caption: latest_si_yr
+				column report_yr
+					caption: report_yr
+				column measure_yr
+					caption: measure_yr
+				column planned_actual
+					caption: planned_actual
+				column spending_fte
+					caption: spending_fte
+				column measure
+					caption: measure
+				column valid_program
+					caption: valid_program
+				column org_service_id
+					caption: org_service_id
+				column org_program_id
+					caption: org_program_id
+				column snapshot
+					caption: snapshot
+				column measure_fy_planned_actual
+					caption: measure_fy_planned_actual
+			table si
+				caption: si
+				column fiscal_yr
+					caption: fiscal_yr
+				column org_id
+					caption: org_id
+				column service_id
+					caption: service_id
+				column service_name_en
+					caption: service_name_en
+				column service_name_fr
+					caption: service_name_fr
+				column service_description_en
+					caption: service_description_en
+				column service_description_fr
+					caption: service_description_fr
+				column service_type
+					caption: service_type
+				column service_recipient_type
+					caption: service_recipient_type
+				column service_scope
+					caption: service_scope
+				column client_target_groups
+					caption: client_target_groups
+				column program_name_en
+					caption: program_name_en
+				column program_name_fr
+					caption: program_name_fr
+				column client_feedback_channel
+					caption: client_feedback_channel
+				column service_fee
+					caption: service_fee
+				column last_GBA
+					caption: last_GBA
+				column ident_platform
+					caption: ident_platform
+				column ident_platform_comments
+					caption: ident_platform_comments
+				column os_account_registration
+					caption: os_account_registration
+				column os_authentication
+					caption: os_authentication
+				column os_application
+					caption: os_application
+				column os_decision
+					caption: os_decision
+				column os_issuance
+					caption: os_issuance
+				column os_issue_resolution_feedback
+					caption: os_issue_resolution_feedback
+				column os_comments_client_interaction_en
+					caption: os_comments_client_interaction_en
+				column os_comments_client_interaction_fr
+					caption: os_comments_client_interaction_fr
+				column how_has_the_service_been_assessed_for_accessibility
+					caption: how_has_the_service_been_assessed_for_accessibility
+				column last_service_review
+					caption: last_service_review
+				column last_service_improvement
+					caption: last_service_improvement
+				column sin_usage
+					caption: sin_usage
+				column cra_bn_identifier_usage
+					caption: cra_bn_identifier_usage
+				column num_phone_enquiries
+					caption: num_phone_enquiries
+				column num_applications_by_phone
+					caption: num_applications_by_phone
+				column num_website_visits
+					caption: num_website_visits
+				column num_applications_online
+					caption: num_applications_online
+				column num_applications_in_person
+					caption: num_applications_in_person
+				column num_applications_by_mail
+					caption: num_applications_by_mail
+				column num_applications_by_email
+					caption: num_applications_by_email
+				column num_applications_by_fax
+					caption: num_applications_by_fax
+				column num_applications_by_other
+					caption: num_applications_by_other
+				column special_remarks_en
+					caption: special_remarks_en
+				column special_remarks_fr
+					caption: special_remarks_fr
+				column service_uri_en
+					caption: service_uri_en
+				column service_uri_fr
+					caption: service_uri_fr
+				column num_applications_total
+					caption: num_applications_total
+				column org_name_variant
+					caption: org_name_variant
+				column department_en
+					caption: department_en
+				column department_fr
+					caption: department_fr
+				column program_id
+					caption: program_id
+				column automated_decision_system_description_en
+					caption: automated_decision_system_description_en
+				column automated_decision_system
+					caption: automated_decision_system
+				column automated_decision_system_description_fr
+					caption: automated_decision_system_description_fr
+				column fy_org_id_service_id
+					caption: fy_org_id_service_id
+				column org_service_id
+					caption: org_service_id
+				column fy_org_id
+					caption: fy_org_id
+				column snapshot
+					caption: snapshot
+			table dept
+				caption: dept
+				column org_id
+					caption: org_id
+				column department_en
+					caption: department_en
+				column department_fr
+					caption: department_fr
+			table program_list
+				caption: program_list
+				column org_id
+					caption: org_id
+				column program_id
+					caption: program_id
+				column latest_valid_fy
+					caption: latest_valid_fy
+				column program_en
+					caption: program_en
+				column program_fr
+					caption: program_fr
+				column org_program_id
+					caption: org_program_id
+			table maf_all
+				caption: maf_all
+				column fiscal_yr
+					caption: fiscal_yr
+				column org_id
+					caption: org_id
+				column department_en
+					caption: department_en
+				column department_fr
+					caption: department_fr
+				column service_with_std_count
+					caption: service_with_std_count
+				column service_count_maf1
+					caption: service_count_maf1
+				column maf1_score
+					caption: maf1_score
+				column service_standard_met
+					caption: service_standard_met
+				column service_standard_count
+					caption: service_standard_count
+				column maf2_score
+					caption: maf2_score
+				column online_e2e_count
+					caption: online_e2e_count
+				column service_count_maf5
+					caption: service_count_maf5
+				column maf5_score
+					caption: maf5_score
+				column activated_point_count
+					caption: activated_point_count
+				column point_count
+					caption: point_count
+				column maf6_score
+					caption: maf6_score
+				column improved_services_count
+					caption: improved_services_count
+				column service_count_maf8
+					caption: service_count_maf8
+				column maf8_score
+					caption: maf8_score
+				column fy_org_id
+					caption: fy_org_id
+				column snapshot
+					caption: snapshot
+			table si_volume
+				caption: si_volume
+				column fiscal_yr
+					caption: fiscal_yr
+				column org_id
+					caption: org_id
+				column service_id
+					caption: service_id
+				column channel
+					caption: channel
+				column volume
+					caption: volume
+				column fy_org_id_service_id
+					caption: fy_org_id_service_id
+				column snapshot
+					caption: snapshot
+			table sid_list
+				caption: sid_list
+				column service_id
+					caption: service_id
+				column service_name_en
+					caption: service_name_en
+				column service_name_fr
+					caption: service_name_fr
+				column department_en
+					caption: department_en
+				column department_fr
+					caption: department_fr
+				column org_id
+					caption: org_id
+				column fiscal_yr_first
+					caption: fiscal_yr_first
+				column fiscal_yr_latest
+					caption: fiscal_yr_latest
+				column service_scope_ext_or_ent
+					caption: service_scope_ext_or_ent
+				column org_service_id
+					caption: org_service_id
+				column service_id_name_en
+					caption: service_id_name_en
+				column service_id_name_fr
+					caption: service_id_name_fr
+			table !measures
+				caption: !measures
+				column Column
+					caption: Column
+				measure total_services_count_pc
+					caption: total_services_count_pc
+				measure services_with_std_pc_maf1
+					caption: services_with_std_pc_maf1
+				measure standards_met_pc_maf2
+					caption: standards_met_pc_maf2
+				measure standards_with_performance
+					caption: standards_with_performance
+				measure total_applications
+					caption: total_applications
+				measure total_applications_all_orgs
+					caption: total_applications_all_orgs
+				measure total_applications_pc_all_orgs
+					caption: total_applications_pc_all_orgs
+				measure service_count
+					caption: service_count
+				measure standards_met
+					caption: standards_met
+				measure services_with_std_maf1
+					caption: services_with_std_maf1
+				measure si_qa_issues_count
+					caption: si_qa_issues_count
+				measure ss_qa_issues_count
+					caption: ss_qa_issues_count
+				measure main_channel
+					caption: main_channel
+				measure max_applications
+					caption: max_applications
+				measure multiple_services_selected
+					caption: multiple_services_selected
+				measure multiple_services_selected_count
+					caption: multiple_services_selected_count
+			table snapshot_options
+				caption: snapshot_options
+				column options
+					caption: options
+				column header_colour
+					caption: header_colour
+				column header_title
+					caption: header_title
+			table fiscal_yr
+				caption: fiscal_yr
+			table 'updates since 2026-01-19'
+				caption: updates since 2026-01-19
+				column key
+					caption: key
+				column field
+					caption: field
+				column base_value
+					caption: base_value
+				column comp_value
+					caption: comp_value
+				column section
+					caption: section
+				column side
+					caption: side
+				column base_name
+					caption: base_name
+				column comp_name
+					caption: comp_name
+				column key_name
+					caption: key_name
+				column snapshot
+					caption: snapshot
+			table timestamp
+				caption: timestamp
+				column Timestamp
+					caption: Timestamp
+			table si_qa_report
+				caption: si_qa_report
+				column department_en
+					caption: department_en
+				column department_fr
+					caption: department_fr
+				column org_id
+					caption: org_id
+				column fiscal_yr
+					caption: fiscal_yr
+				column service_id
+					caption: service_id
+				column service_name_en
+					caption: service_name_en
+				column service_name_fr
+					caption: service_name_fr
+				column issue
+					caption: issue
+				column severity_en
+					caption: severity_en
+				column description_en
+					caption: description_en
+				column action_en
+					caption: action_en
+				column severity_fr
+					caption: severity_fr
+				column description_fr
+					caption: description_fr
+				column action_fr
+					caption: action_fr
+				column context
+					caption: context
+				column fy_org_id_service_id
+					caption: fy_org_id_service_id
+			table ss_qa_report
+				caption: ss_qa_report
+				column department_en
+					caption: department_en
+				column department_fr
+					caption: department_fr
+				column org_id
+					caption: org_id
+				column fiscal_yr
+					caption: fiscal_yr
+				column service_id
+					caption: service_id
+				column service_name_en
+					caption: service_name_en
+				column service_name_fr
+					caption: service_name_fr
+				column service_standard_id
+					caption: service_standard_id
+				column service_standard_en
+					caption: service_standard_en
+				column service_standard_fr
+					caption: service_standard_fr
+				column volume_meeting_target
+					caption: volume_meeting_target
+				column total_volume
+					caption: total_volume
+				column performance
+					caption: performance
+				column issue
+					caption: issue
+				column severity_en
+					caption: severity_en
+				column description_en
+					caption: description_en
+				column action_en
+					caption: action_en
+				column severity_fr
+					caption: severity_fr
+				column description_fr
+					caption: description_fr
+				column action_fr
+					caption: action_fr
+				column fy_org_id_service_id_std_id
+					caption: fy_org_id_service_id_std_id
+			table qa_issues_descriptions
+				caption: qa_issues_descriptions
+				column qa_field_name
+					caption: qa_field_name
+				column severity_en
+					caption: severity_en
+				column severity_fr
+					caption: severity_fr
+				column table
+					caption: table
+				column description_en
+					caption: description_en
+				column action_en
+					caption: action_en
+				column description_fr
+					caption: description_fr
+				column action_fr
+					caption: action_fr
+				column severity_colour
+					caption: severity_colour
+			table dd_field_names
+				caption: dd_field_names
+				column resource_name
+					caption: resource_name
+				column title_en
+					caption: title_en
+				column title_fr
+					caption: title_fr
+				column 'Field ID'
+					caption: Field ID
+				column datastore_type
+					caption: datastore_type
+				column obligation_en
+					caption: obligation_en
+				column obligation_fr
+					caption: obligation_fr
+				column Field
+					caption: Field
+				column label_fr
+					caption: label_fr
+				column Description
+					caption: Description
+				column description_fr
+					caption: description_fr
+				column validation_en
+					caption: validation_en
+				column validation_fr
+					caption: validation_fr
+				column character_limit
+					caption: character_limit
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "measures.total_applications_all_orgs": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "total_applications_all_orgs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Total applications": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures.total_applications": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "total_applications"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Filtered application volume": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total Applications": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures.service_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "service_count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Services": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures.services_with_std_maf1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "services_with_std_maf1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Services with standards": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures.services_with_std_pc_maf1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "services_with_std_pc_maf1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Services with standards (%)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures.standards_with_performance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "standards_with_performance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Standards": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Standards with performance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures.standards_met": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "standards_met"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Standards met": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures.standards_met_pc_maf2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "standards_met_pc_maf2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Standards met (%)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures.main_channel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "main_channel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Main channel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures.max_applications": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "max_applications"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Main channel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures.si_qa_issues_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "si_qa_issues_count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Service inventory issues": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures.ss_qa_issues_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "!measures",
+			          "ConceptualProperty": "ss_qa_issues_count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Service standard issues": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dept.department_en": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dept",
+			          "ConceptualProperty": "department_en"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Department / Agency": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sid_list.service_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sid_list",
+			          "ConceptualProperty": "service_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "sid_list.service_name_en": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "sid_list",
+			          "ConceptualProperty": "service_name_en"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Service Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fiscal_yr.fiscal_yr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fiscal_yr",
+			          "ConceptualProperty": "fiscal_yr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Fiscal year": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ss.fiscal_yr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ss",
+			          "ConceptualProperty": "fiscal_yr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Fiscal year": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ss.service_standard_en": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ss",
+			          "ConceptualProperty": "service_standard_en"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Standard": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ss.type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ss",
+			          "ConceptualProperty": "type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Type": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ss.channel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ss",
+			          "ConceptualProperty": "channel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Channel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ss.total_volume": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ss",
+			          "ConceptualProperty": "total_volume"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Total volume": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ss.volume_meeting_target": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ss",
+			          "ConceptualProperty": "volume_meeting_target"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Volume meeting target": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ss.performance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ss",
+			          "ConceptualProperty": "performance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Performance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ss.target": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ss",
+			          "ConceptualProperty": "target"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Target": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ss.target_met": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ss",
+			          "ConceptualProperty": "target_met"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Target met": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "updates_since_20260119.key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "updates since 2026-01-19",
+			          "ConceptualProperty": "key"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fy_org_id_service_id": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "updates_since_20260119.field": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "updates since 2026-01-19",
+			          "ConceptualProperty": "field"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Field that changed": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "updates_since_20260119.base_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "updates since 2026-01-19",
+			          "ConceptualProperty": "base_value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Snapshot value": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "updates_since_20260119.comp_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "updates since 2026-01-19",
+			          "ConceptualProperty": "comp_value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Live value": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "qa_issues_descriptions.qa_field_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "qa_issues_descriptions",
+			          "ConceptualProperty": "qa_field_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "issue": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

@@ -1,0 +1,199 @@
+cultureInfo fr-CA
+	translations
+		model Model
+			table ss
+				caption: Normes de service et résultats de rendement
+				column fiscal_yr
+					caption: Exercice financier
+				column service_id
+					caption: Numéro d'identification du service
+				column service_name_en
+					caption: Nom du service (anglais)
+				column service_name_fr
+					caption: Nom du service (français)
+				column service_standard_id
+					caption: Numéro d'identification de la norme relative aux services
+				column service_standard_en
+					caption: Norme relative aux services (anglais)
+				column service_standard_fr
+					caption: Norme relative aux services (français)
+				column type
+					caption: Type de norme relative aux services
+				column channel
+					caption: Mode de prestation de la norme de service
+				column channel_comments_en
+					caption: Commentaires sur le mode de prestation de la norme de service (anglais)
+				column channel_comments_fr
+					caption: Commentaires sur le mode de prestation de la norme de service (Francais)
+				column target
+					caption: Cible de la norme relative aux services
+				column volume_meeting_target
+					caption: Volume d'activités qui respectent la norme de service
+				column total_volume
+					caption: Volumes totaux
+				column performance
+					caption: Performance
+				column comments_en
+					caption: Commentaires sur la norme de service en général (anglais)
+				column comments_fr
+					caption: Commentaires sur la norme de service en général (français)
+				column target_met
+					caption: La cible était-elle atteinte
+				column standards_targets_uri_en
+					caption: URL vers les normes de service et les cibles (anglais)
+				column standards_targets_uri_fr
+					caption: URL vers les normes de service et les cibles (français)
+				column performance_results_uri_en
+					caption: URL aux résultats de rendement en temps réel (anglais)
+				column performance_results_uri_fr
+					caption: URL aux résultats de rendement en temps réel (français)
+			table service_fte_spending
+				column service_id
+					caption: Numéro d'identification du service
+				column fiscal_yr
+					caption: Exercice financier
+				column program_id
+					caption: Code d'identification du programme
+			table si
+				caption: "Renseignements sur l'identification des services
+				column fiscal_yr
+					caption: Exercice financier
+				column service_id
+					caption: Numéro d'identification du service
+				column service_name_en
+					caption: Nom du service (anglais)
+				column service_name_fr
+					caption: Nom du service (français)
+				column service_description_en
+					caption: Description du service (anglais)
+				column service_description_fr
+					caption: Description du service (français)
+				column service_type
+					caption: Type de service
+				column service_recipient_type
+					caption: Type de bénéficiaire du service
+				column service_scope
+					caption: Étendue du service
+				column client_target_groups
+					caption: Clients/groupes cibles
+				column program_name_en
+					caption: Désignation du programme (anglais)
+				column program_name_fr
+					caption: Désignation du programme (français)
+				column client_feedback_channel
+					caption: " by Channel"""
+				column service_fee
+					caption: Frais de service
+				column os_account_registration
+					caption: Services en ligne : Enregistrement/inscription du compte
+				column os_authentication
+					caption: Services en ligne : Authentification
+				column os_application
+					caption: Services en ligne : Demande
+				column os_decision
+					caption: Services en ligne : Décision
+				column os_issuance
+					caption: Services en ligne : Émission
+				column os_issue_resolution_feedback
+					caption: Services en ligne : Solution de problème et rétroaction
+				column os_comments_client_interaction_en
+					caption: Commentaires sur les services électroniques - points d'interaction avec les clients (anglais)
+				column os_comments_client_interaction_fr
+					caption: Commentaires sur les services électroniques - points d'interaction avec les clients (français)
+				column last_service_review
+					caption: Année du dernier examen de service
+				column last_service_improvement
+					caption: Année de la dernière amélioration du service sur la base de la rétroaction du client
+				column sin_usage
+					caption: Utilisation du numéro d'assurance sociale (NAS)
+				column cra_bn_identifier_usage
+					caption: Utilisation du numéro d’entreprise de l’ARC en tant qu’identificateur standard
+				column num_phone_enquiries
+					caption: Nombre de demandes de renseignements reçues par telephone
+				column num_applications_by_phone
+					caption: Nombre de demandes soumises par téléphone
+				column num_website_visits
+					caption: Nombre de visites sur le site Web
+				column num_applications_online
+					caption: Nombre de demandes soumises en ligne
+				column num_applications_in_person
+					caption: Nombre de demandes soumises en personne
+				column num_applications_by_mail
+					caption: Nombre de demandes soumises par la poste
+				column num_applications_by_email
+					caption: Nombre de demandes soumises par courriel
+				column num_applications_by_fax
+					caption: Nombre de demandes soumises par fax
+				column num_applications_by_other
+					caption: Nombre de demandes soumises par les autre modes de prestations
+				column special_remarks_en
+					caption: Remarques spéciales (anglais)
+				column special_remarks_fr
+					caption: Remarques spéciales (français)
+				column service_uri_en
+					caption: URL du service (anglais)
+				column service_uri_fr
+					caption: URL du service (français)
+				column num_applications_total
+					caption: Nombre total de demandes soumises
+				column program_id
+					caption: Code d'identification du programme
+				column automated_decision_system_description_en
+					caption: Description du système décisionnel automatisé (anglais)
+				column automated_decision_system
+					caption: Système décisionnel automatisé
+				column automated_decision_system_description_fr
+					caption: Description du système décisionnel automatisé (français)
+			table program_list
+				column program_id
+					caption: Code d'identification du programme
+			table maf_all
+				column fiscal_yr
+					caption: Exercice financier
+			table si_volume
+				column fiscal_yr
+					caption: Exercice financier
+				column service_id
+					caption: Numéro d'identification du service
+				column channel
+					caption: Mode de prestation de la norme de service
+			table sid_list
+				column service_id
+					caption: Numéro d'identification du service
+				column service_name_en
+					caption: Nom du service (anglais)
+				column service_name_fr
+					caption: Nom du service (français)
+			table fiscal_yr
+				caption: Exercice financier
+			table si_qa_report
+				column fiscal_yr
+					caption: Exercice financier
+				column service_id
+					caption: Numéro d'identification du service
+				column service_name_en
+					caption: Nom du service (anglais)
+				column service_name_fr
+					caption: Nom du service (français)
+			table ss_qa_report
+				column fiscal_yr
+					caption: Exercice financier
+				column service_id
+					caption: Numéro d'identification du service
+				column service_name_en
+					caption: Nom du service (anglais)
+				column service_name_fr
+					caption: Nom du service (français)
+				column service_standard_id
+					caption: Numéro d'identification de la norme relative aux services
+				column service_standard_en
+					caption: Norme relative aux services (anglais)
+				column service_standard_fr
+					caption: Norme relative aux services (français)
+				column volume_meeting_target
+					caption: Volume d'activités qui respectent la norme de service
+				column total_volume
+					caption: Volumes totaux
+				column performance
+					caption: Performance
+

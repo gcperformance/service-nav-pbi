@@ -1,4 +1,201 @@
 cultureInfo en-CA
+	translations
+		model Model
+			table ss
+				caption: Service Standards & Performance Results
+				column fiscal_yr
+					caption: Fiscal Year
+				column service_id
+					caption: Service ID Number
+				column service_name_en
+					caption: Service Name (English)
+				column service_name_fr
+					caption: Service Name (French)
+				column service_standard_id
+					caption: Service Standard ID
+				column service_standard_en
+					caption: Service Standard (English)
+				column service_standard_fr
+					caption: Service Standard (French)
+				column type
+					caption: Service Standard Type
+				column channel
+					caption: Service Standard Channel
+				column channel_comments_en
+					caption: Comments on the service standard channel (English)
+				column channel_comments_fr
+					caption: Comments on the service standard channel (French)
+				column target
+					caption: Service Standard Target
+				column volume_meeting_target
+					caption: Business Volume That Met Service Standard Target
+				column total_volume
+					caption: Total Volume
+				column performance
+					caption: Performance
+				column comments_en
+					caption: Comments on the service standard in general (English)
+				column comments_fr
+					caption: Comments on the service standard in general (French)
+				column target_met
+					caption: Was the target met
+				column standards_targets_uri_en
+					caption: URL to Service Standards and Targets (English)
+				column standards_targets_uri_fr
+					caption: URL to Service Standards and Targets (French)
+				column performance_results_uri_en
+					caption: URL to Real-Time Performance Results (English)
+				column performance_results_uri_fr
+					caption: URL to Real-Time Performance Results (French)
+			table service_fte_spending
+				column service_id
+					caption: Service ID Number
+				column fiscal_yr
+					caption: Fiscal Year
+				column program_id
+					caption: Program ID Code
+			table si
+				caption: Service Identification Information & Metrics
+				column fiscal_yr
+					caption: Fiscal Year
+				column service_id
+					caption: Service ID Number
+				column service_name_en
+					caption: Service Name (English)
+				column service_name_fr
+					caption: Service Name (French)
+				column service_description_en
+					caption: Service Description (English)
+				column service_description_fr
+					caption: Service Description (French)
+				column service_type
+					caption: Service Type
+				column service_recipient_type
+					caption: Service Recipient Type
+				column service_scope
+					caption: Service Scope
+				column client_target_groups
+					caption: Client/Target Groups
+				column program_name_en
+					caption: Program Name (English)
+				column program_name_fr
+					caption: Program Name (French)
+				column client_feedback_channel
+					caption: "Client Feedback
+				column service_fee
+					caption: Service Fees
+				column os_account_registration
+					caption: Online Services: Account Registration/Enrollment
+				column os_authentication
+					caption: Online Services: Authentication
+				column os_application
+					caption: Online Services: Application
+				column os_decision
+					caption: Online Services: Decision
+				column os_issuance
+					caption: Online Services: Issuance
+				column os_issue_resolution_feedback
+					caption: Online Services: Issue Resolution and Feedback
+				column os_comments_client_interaction_en
+					caption: Comments on Online Services - Client Interaction Points (English)
+				column os_comments_client_interaction_fr
+					caption: Comments on Online Services - Client Interaction Points (French)
+				column last_service_review
+					caption: Year of last service review
+				column last_service_improvement
+					caption: Year of last service improvement based on client feedback
+				column sin_usage
+					caption: Use of Social Insurance Number
+				column cra_bn_identifier_usage
+					caption: Use of CRA Business Number as Standard Identifier
+				column num_phone_enquiries
+					caption: Number of Telephone Enquiries Received
+				column num_applications_by_phone
+					caption: Number of Applications Submitted by Telephone
+				column num_website_visits
+					caption: Number of Website Visits
+				column num_applications_online
+					caption: Number of Applications Submitted Online
+				column num_applications_in_person
+					caption: Number of Applications Submitted In-Person
+				column num_applications_by_mail
+					caption: Number of Applications Submitted via Postal Mail
+				column num_applications_by_email
+					caption: Number of Applications Submitted by Email
+				column num_applications_by_fax
+					caption: Number of Applications Submitted by Fax
+				column num_applications_by_other
+					caption: Number of Applications Submitted via other channels
+				column special_remarks_en
+					caption: Special Remarks (English)
+				column special_remarks_fr
+					caption: Special Remarks (French)
+				column service_uri_en
+					caption: URL to Service (English)
+				column service_uri_fr
+					caption: URL to Service (French)
+				column num_applications_total
+					caption: Total Number of Applications
+				column program_id
+					caption: Program ID Code
+				column automated_decision_system_description_en
+					caption: Automated Decision System Description (English)
+				column automated_decision_system
+					caption: Automated Decision System
+				column automated_decision_system_description_fr
+					caption: Automated Decision System Description (French)
+			table program_list
+				column program_id
+					caption: Program ID Code
+			table maf_all
+				column fiscal_yr
+					caption: Fiscal Year
+			table si_volume
+				column fiscal_yr
+					caption: Fiscal Year
+				column service_id
+					caption: Service ID Number
+				column channel
+					caption: Service Standard Channel
+			table sid_list
+				column service_id
+					caption: Service ID Number
+				column service_name_en
+					caption: Service Name (English)
+				column service_name_fr
+					caption: Service Name (French)
+			table fiscal_yr
+				caption: Fiscal Year
+			table si_qa_report
+				column fiscal_yr
+					caption: Fiscal Year
+				column service_id
+					caption: Service ID Number
+				column service_name_en
+					caption: Service Name (English)
+				column service_name_fr
+					caption: Service Name (French)
+			table ss_qa_report
+				column fiscal_yr
+					caption: Fiscal Year
+				column service_id
+					caption: Service ID Number
+				column service_name_en
+					caption: Service Name (English)
+				column service_name_fr
+					caption: Service Name (French)
+				column service_standard_id
+					caption: Service Standard ID
+				column service_standard_en
+					caption: Service Standard (English)
+				column service_standard_fr
+					caption: Service Standard (French)
+				column volume_meeting_target
+					caption: Business Volume That Met Service Standard Target
+				column total_volume
+					caption: Total Volume
+				column performance
+					caption: Performance
 
 	linguisticMetadata =
 			{

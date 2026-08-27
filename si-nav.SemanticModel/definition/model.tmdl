@@ -1,7 +1,7 @@
 model Model
-	culture: en-CA
+	culture: en-US
 	defaultPowerBIDataSourceVersion: powerBI_V3
-	sourceQueryCulture: en-CA
+	sourceQueryCulture: en-US
 	dataAccessOptions
 		legacyRedirects
 		returnErrorValuesAsNull
@@ -24,6 +24,8 @@ annotation PBI_QueryOrder = ["si","ss","service_fte_spending","timestamp","dept"
 
 annotation PBI_ProTooling = ["DevMode"]
 
+annotation TranslationsBuilder = Version:2.2-Updated:2026-08-27
+
 ref table ss
 ref table service_fte_spending
 ref table si
@@ -45,4 +47,6 @@ ref table qa_issues_descriptions
 ref table dd_field_names
 
 ref cultureInfo en-CA
+ref cultureInfo en-US
+ref cultureInfo fr-CA
 
