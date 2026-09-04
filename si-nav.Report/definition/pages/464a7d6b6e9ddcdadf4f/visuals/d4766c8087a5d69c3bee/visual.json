@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "763fe3c4bffa9fe59885",
+  "name": "d4766c8087a5d69c3bee",
   "position": {
-    "x": 427.32307692307694,
-    "y": 171.32307692307691,
-    "z": 12000,
-    "height": 300.30769230769232,
-    "width": 425.35384615384618,
-    "tabOrder": 12000
+    "x": 645.505376344086,
+    "y": 507.87096774193549,
+    "z": 15000,
+    "height": 185.34923339011925,
+    "width": 630,
+    "tabOrder": 11005
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -33,25 +33,6 @@
           ],
           "showAll": true
         },
-        "Tooltips": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "!measures"
-                    }
-                  },
-                  "Property": "main_channel"
-                }
-              },
-              "queryRef": "!measures.main_channel",
-              "nativeQueryRef": "Main channel",
-              "displayName": "Main channel"
-            }
-          ]
-        },
         "Y": {
           "projections": [
             {
@@ -62,12 +43,12 @@
                       "Entity": "!measures"
                     }
                   },
-                  "Property": "total_applications"
+                  "Property": "standards_with_performance"
                 }
               },
-              "queryRef": "!measures.total_applications",
-              "nativeQueryRef": "Total applications",
-              "displayName": "Total applications"
+              "queryRef": "!measures.standards_with_performance",
+              "nativeQueryRef": "Standards with performance",
+              "displayName": "Standards with performance"
             },
             {
               "field": {
@@ -77,12 +58,12 @@
                       "Entity": "!measures"
                     }
                   },
-                  "Property": "max_applications"
+                  "Property": "standards_met"
                 }
               },
-              "queryRef": "!measures.max_applications",
-              "nativeQueryRef": "Main channel1",
-              "displayName": "Main channel"
+              "queryRef": "!measures.standards_met",
+              "nativeQueryRef": "Standards met",
+              "displayName": "Standards met"
             }
           ]
         }
@@ -106,13 +87,61 @@
       }
     },
     "objects": {
-      "legend": [
+      "layout": [
         {
           "properties": {
-            "position": {
+            "clusteredGapOverlaps": {
               "expr": {
                 "Literal": {
-                  "Value": "'BottomCenter'"
+                  "Value": "true"
+                }
+              }
+            },
+            "clusteredGapSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            },
+            "seriesOrderReversed": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "clusteredGapOverlapReverse": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "innerPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "10L"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             },
@@ -146,80 +175,27 @@
           }
         }
       ],
-      "layout": [
+      "legend": [
         {
           "properties": {
-            "clusteredGapOverlaps": {
+            "showGradientLegend": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
             },
-            "clusteredGapSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "100D"
-                }
-              }
-            },
-            "seriesOrderReversed": {
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
             },
-            "seriesOrderSorted": {
+            "position": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "clusteredGapOverlapReverse": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "categoryAxis": [
-        {
-          "properties": {
-            "innerPadding": {
-              "expr": {
-                "Literal": {
-                  "Value": "10L"
-                }
-              }
-            },
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.4
-                    }
-                  }
+                  "Value": "'BottomCenter'"
                 }
               }
             }
@@ -236,6 +212,13 @@
                 }
               }
             },
+            "labelPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Auto'"
+                }
+              }
+            },
             "fontSize": {
               "expr": {
                 "Literal": {
@@ -250,42 +233,7 @@
             "labelPosition": {
               "expr": {
                 "Literal": {
-                  "Value": "'OutsideEnd'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "optimizeLabelDisplay": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "!measures.total_applications"
-          }
-        },
-        {
-          "properties": {
-            "labelPosition": {
-              "expr": {
-                "Literal": {
-                  "Value": "'InsideBase'"
-                }
-              }
-            },
-            "enableValueDataLabel": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "'InsideEnd'"
                 }
               }
             },
@@ -296,6 +244,13 @@
                 }
               }
             },
+            "enableValueDataLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
             "detailFontSize": {
               "expr": {
                 "Literal": {
@@ -303,51 +258,21 @@
                 }
               }
             },
-            "enableBackground": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "backgroundTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "60D"
-                }
-              }
-            },
-            "labelContentLayout": {
-              "expr": {
-                "Literal": {
-                  "Value": "'MultiLine'"
-                }
-              }
-            },
-            "horizontalAlignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'left'"
-                }
-              }
-            },
-            "labelOverflow": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "optimizeLabelDisplay": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+            "detailColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.6
+                    }
+                  }
                 }
               }
             }
           },
           "selector": {
-            "metadata": "!measures.max_applications"
+            "metadata": "!measures.standards_met"
           }
         },
         {
@@ -360,7 +285,7 @@
                       "Entity": "!measures"
                     }
                   },
-                  "Property": "main_channel"
+                  "Property": "standards_met_pc_maf2"
                 }
               }
             }
@@ -373,18 +298,32 @@
                 }
               }
             ],
-            "metadata": "!measures.max_applications",
+            "metadata": "!measures.standards_met",
             "highlightMatching": 1
+          }
+        },
+        {
+          "properties": {
+            "labelPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "'OutsideEnd'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "!measures.standards_with_performance"
           }
         }
       ],
       "dataPoint": [
         {
           "properties": {
-            "fillTransparency": {
+            "borderShow": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "true"
                 }
               }
             },
@@ -393,38 +332,10 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 6,
+                      "ColorId": 0,
                       "Percent": 0
                     }
                   }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "!measures.max_applications"
-          }
-        },
-        {
-          "properties": {
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "100D"
-                }
-              }
-            },
-            "borderShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "borderColorMatchFill": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
                 }
               }
             },
@@ -440,7 +351,40 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 4,
+                      "ColorId": 9,
+                      "Percent": -0.25
+                    }
+                  }
+                }
+              }
+            },
+            "borderColorMatchFill": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "!measures.standards_with_performance"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
                       "Percent": 0
                     }
                   }
@@ -449,25 +393,12 @@
             }
           },
           "selector": {
-            "metadata": "!measures.total_applications"
+            "metadata": "!measures.standards_met"
           }
         }
       ]
     },
     "visualContainerObjects": {
-      "visualTooltip": [
-        {
-          "properties": {
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            }
-          }
-        }
-      ],
       "title": [
         {
           "properties": {
@@ -478,14 +409,21 @@
                 }
               }
             },
-            "heading": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Normal'"
+                  "Value": "'Service standards reported and met'"
                 }
               }
             },
-            "titleWrap": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "italic": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -504,10 +442,10 @@
                 }
               }
             },
-            "alignment": {
+            "heading": {
               "expr": {
                 "Literal": {
-                  "Value": "'center'"
+                  "Value": "'Normal'"
                 }
               }
             },
@@ -515,40 +453,6 @@
               "expr": {
                 "Literal": {
                   "Value": "10D"
-                }
-              }
-            },
-            "italic": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Volume of applications for service and main application channel'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "subTitle": [
-        {
-          "properties": {
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
                 }
               }
             }
@@ -562,26 +466,6 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
                 }
               }
             }
@@ -614,32 +498,6 @@
             }
           }
         }
-      ],
-      "border": [
-        {
-          "properties": {
-            "width": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "visualHeaderTooltip": [
-        {
-          "properties": {
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Arial'"
-                }
-              }
-            }
-          }
-        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -647,7 +505,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "e4a4fa130b449abb5cc2",
+        "name": "12a17610adfbeed2c774",
         "field": {
           "Column": {
             "Expression": {
@@ -688,27 +546,6 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'2019-2020'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'2020-2021'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'2021-2022'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
                           "Value": "'2022-2023'"
                         }
                       }
@@ -726,13 +563,6 @@
                           "Value": "'2024-2025'"
                         }
                       }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'2018-2019'"
-                        }
-                      }
                     ]
                   ]
                 }
@@ -742,7 +572,7 @@
         }
       },
       {
-        "name": "627f9e3cbdadfc5ff4a7",
+        "name": "eefc56ce840ecf4f434b",
         "field": {
           "Measure": {
             "Expression": {
@@ -750,13 +580,13 @@
                 "Entity": "!measures"
               }
             },
-            "Property": "main_channel"
+            "Property": "standards_with_performance"
           }
         },
         "type": "Advanced"
       },
       {
-        "name": "2890f4bf022cca35e211",
+        "name": "22dae99a42b3fa6c49bf",
         "field": {
           "Measure": {
             "Expression": {
@@ -764,21 +594,7 @@
                 "Entity": "!measures"
               }
             },
-            "Property": "total_applications"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "2f70527b760b9e644d2c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "max_applications"
+            "Property": "standards_met"
           }
         },
         "type": "Advanced"

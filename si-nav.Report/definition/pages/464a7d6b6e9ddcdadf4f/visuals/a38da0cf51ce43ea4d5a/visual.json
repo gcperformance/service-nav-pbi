@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "763fe3c4bffa9fe59885",
+  "name": "a38da0cf51ce43ea4d5a",
   "position": {
-    "x": 427.32307692307694,
-    "y": 171.32307692307691,
-    "z": 12000,
-    "height": 300.30769230769232,
-    "width": 425.35384615384618,
-    "tabOrder": 12000
+    "x": 645.505376344086,
+    "y": 313.80645161290323,
+    "z": 18000,
+    "height": 185,
+    "width": 630,
+    "tabOrder": 11008
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -393,8 +393,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 6,
-                      "Percent": 0
+                      "ColorId": 9,
+                      "Percent": -0.25
                     }
                   }
                 }
@@ -440,8 +440,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 4,
-                      "Percent": 0
+                      "ColorId": 9,
+                      "Percent": -0.5
                     }
                   }
                 }
@@ -688,27 +688,6 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'2019-2020'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'2020-2021'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'2021-2022'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
                           "Value": "'2022-2023'"
                         }
                       }
@@ -726,13 +705,6 @@
                           "Value": "'2024-2025'"
                         }
                       }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'2018-2019'"
-                        }
-                      }
                     ]
                   ]
                 }
@@ -742,7 +714,7 @@
         }
       },
       {
-        "name": "627f9e3cbdadfc5ff4a7",
+        "name": "b12964075e1d99478f30",
         "field": {
           "Measure": {
             "Expression": {
@@ -756,7 +728,7 @@
         "type": "Advanced"
       },
       {
-        "name": "2890f4bf022cca35e211",
+        "name": "bc4a03ea9980ef5fbc11",
         "field": {
           "Measure": {
             "Expression": {
@@ -770,7 +742,7 @@
         "type": "Advanced"
       },
       {
-        "name": "2f70527b760b9e644d2c",
+        "name": "ce5402b67c5074ef71b4",
         "field": {
           "Measure": {
             "Expression": {

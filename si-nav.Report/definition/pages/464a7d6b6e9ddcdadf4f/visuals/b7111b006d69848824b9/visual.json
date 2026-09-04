@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "763fe3c4bffa9fe59885",
+  "name": "b7111b006d69848824b9",
   "position": {
-    "x": 427.32307692307694,
-    "y": 171.32307692307691,
-    "z": 12000,
-    "height": 300.30769230769232,
-    "width": 425.35384615384618,
-    "tabOrder": 12000
+    "x": 5.5053763440860219,
+    "y": 313.80645161290323,
+    "z": 17000,
+    "height": 185,
+    "width": 630,
+    "tabOrder": 11007
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -688,27 +688,6 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'2019-2020'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'2020-2021'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'2021-2022'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
                           "Value": "'2022-2023'"
                         }
                       }
@@ -726,13 +705,6 @@
                           "Value": "'2024-2025'"
                         }
                       }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'2018-2019'"
-                        }
-                      }
                     ]
                   ]
                 }
@@ -742,7 +714,7 @@
         }
       },
       {
-        "name": "627f9e3cbdadfc5ff4a7",
+        "name": "571b0f9f1a1cfff5e24d",
         "field": {
           "Measure": {
             "Expression": {
@@ -756,7 +728,7 @@
         "type": "Advanced"
       },
       {
-        "name": "2890f4bf022cca35e211",
+        "name": "0f4f6d650ce13c351911",
         "field": {
           "Measure": {
             "Expression": {
@@ -770,7 +742,7 @@
         "type": "Advanced"
       },
       {
-        "name": "2f70527b760b9e644d2c",
+        "name": "3070af2cc45692048913",
         "field": {
           "Measure": {
             "Expression": {

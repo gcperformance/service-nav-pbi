@@ -230,6 +230,19 @@
           },
           "zIndex": 1,
           "expandedHeight": 272
+        },
+        {
+          "location": {
+            "x": 1800.1651311905202,
+            "y": 397.53864394311029
+          },
+          "nodeIndex": "dd_field_names",
+          "nodeLineageTag": "f313d2d9-cf80-42d2-9565-e3aca6454145",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
