@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "15605efd24dbbfc0a084",
   "position": {
     "x": 427.32307692307694,
@@ -7,7 +7,7 @@
     "z": 13000,
     "height": 249.1076923076923,
     "width": 852.67692307692312,
-    "tabOrder": 13000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "tableEx",
@@ -502,8 +502,151 @@
             }
           }
         }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Service standard list'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a36d270b0407d539e107",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "fiscal_yr"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0a0d07a9aa5ea0e17d71",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "service_standard_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "9f10bba3a8ce1bb89482",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "type"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "9e89b4a14ca3b098640e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "channel"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "573f8f1e1298ad6797e0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "total_volume"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d518f48934240d0a808c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "volume_meeting_target"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "e2361992636e7c463e00",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "performance"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "659539ac383461509514",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "target"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3175588cc17dd7cb0226",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "ss"
+              }
+            },
+            "Property": "target_met"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

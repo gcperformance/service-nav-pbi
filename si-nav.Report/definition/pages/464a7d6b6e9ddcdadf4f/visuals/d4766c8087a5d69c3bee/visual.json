@@ -7,7 +7,7 @@
     "z": 15000,
     "height": 185.34923339011925,
     "width": 630,
-    "tabOrder": 11005
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -412,7 +412,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Service standards reported and met'"
+                  "Value": "'Service standards reported and met Service B'"
                 }
               }
             },

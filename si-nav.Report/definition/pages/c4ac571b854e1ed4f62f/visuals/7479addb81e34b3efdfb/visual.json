@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "7479addb81e34b3efdfb",
   "position": {
     "x": 1116.9301611665387,
@@ -7,7 +7,7 @@
     "z": 2000,
     "height": 42.240982348426705,
     "width": 163.06983883346123,
-    "tabOrder": 1000
+    "tabOrder": 15
   },
   "visual": {
     "visualType": "slicer",
@@ -186,6 +186,13 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Snapshot selection'"
                 }
               }
             }

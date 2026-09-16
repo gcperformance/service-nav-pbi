@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "726c8fb054041bf79536",
   "position": {
     "x": 854.64615384615388,
@@ -7,7 +7,7 @@
     "z": 10000,
     "height": 300.30769230769232,
     "width": 425.35384615384618,
-    "tabOrder": 10000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -586,6 +586,34 @@
             }
           ]
         }
+      },
+      {
+        "name": "47591cbd0082a4b3e17e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "standards_with_performance"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b63659efcd4501e10502",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "standards_met"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

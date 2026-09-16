@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "eeebba701e4b89b7807a",
   "position": {
     "x": 0,
@@ -7,7 +7,7 @@
     "z": 2000,
     "height": 214.00503778337529,
     "width": 1280.4030226700252,
-    "tabOrder": 2000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "pivotTable",
@@ -112,10 +112,10 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "program_list"
+                    "Entity": "service_fte_spending"
                   }
                 },
-                "Property": "program_en"
+                "Property": "program_id"
               }
             },
             "direction": "Ascending"

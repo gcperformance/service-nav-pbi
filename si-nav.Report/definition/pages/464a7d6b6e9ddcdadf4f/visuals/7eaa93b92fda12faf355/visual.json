@@ -7,7 +7,7 @@
     "z": 6000,
     "height": 70,
     "width": 630,
-    "tabOrder": 7000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -355,7 +355,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -388,6 +388,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Arial'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Department or Agency Service A'"
                 }
               }
             }

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "f988a1b46170917acd2d",
   "position": {
     "x": 1177.9345088161208,
@@ -7,7 +7,7 @@
     "z": 6001,
     "height": 32.6448362720403,
     "width": 96.12090680100755,
-    "tabOrder": 6001
+    "tabOrder": 20
   },
   "visual": {
     "visualType": "shape",
@@ -156,6 +156,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'c59c59c181688a540a33'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Reset filters button'"
                 }
               }
             }

@@ -23,21 +23,6 @@
   "visualInteractions": [
     {
       "source": "650af2b24aab91789dbb",
-      "target": "485ffa4eb4822c6bf6de",
-      "type": "DataFilter"
-    },
-    {
-      "source": "0514233a00269d6088e7",
-      "target": "485ffa4eb4822c6bf6de",
-      "type": "DataFilter"
-    },
-    {
-      "source": "485ffa4eb4822c6bf6de",
-      "target": "0514233a00269d6088e7",
-      "type": "DataFilter"
-    },
-    {
-      "source": "650af2b24aab91789dbb",
       "target": "0514233a00269d6088e7",
       "type": "DataFilter"
     },

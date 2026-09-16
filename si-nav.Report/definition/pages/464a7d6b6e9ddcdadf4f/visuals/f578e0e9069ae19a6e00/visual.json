@@ -7,7 +7,7 @@
     "z": 5000,
     "height": 41.80052956751986,
     "width": 249.67343336275377,
-    "tabOrder": 3000
+    "tabOrder": 14000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -354,8 +354,44 @@
             }
           }
         }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Last refresh'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1d34b6fd27d42d050969",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "timestamp"
+                  }
+                },
+                "Property": "Timestamp"
+              }
+            },
+            "Function": 3
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "01e520e39e4d9c0d5486",
   "position": {
     "x": 1051.7917034421889,
@@ -7,7 +7,7 @@
     "z": 1000,
     "height": 41.80052956751986,
     "width": 228.20829655781114,
-    "tabOrder": 7000
+    "tabOrder": -1
   },
   "visual": {
     "visualType": "shape",
@@ -106,6 +106,21 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Snapshot text'"
                 }
               }
             }

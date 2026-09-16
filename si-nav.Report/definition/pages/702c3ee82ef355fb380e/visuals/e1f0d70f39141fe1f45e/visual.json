@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "e1f0d70f39141fe1f45e",
   "position": {
     "x": 63.4281072298944,
@@ -7,7 +7,7 @@
     "z": 5000,
     "height": 291.14541023558087,
     "width": 475.19090170593017,
-    "tabOrder": 5000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "tableEx",
@@ -300,7 +300,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -315,6 +315,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Arial'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Summary of service QA issues by issue type'"
                 }
               }
             }
@@ -421,5 +428,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c721daa771968290c0ae",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "qa_issues_descriptions"
+              }
+            },
+            "Property": "severity_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "4766dd2b582cc7ae9b07",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "qa_issues_descriptions"
+              }
+            },
+            "Property": "qa_field_name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d62268d0690b59c08c04",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "si_qa_issues_count"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

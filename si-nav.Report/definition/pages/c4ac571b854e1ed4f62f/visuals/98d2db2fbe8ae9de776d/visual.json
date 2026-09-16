@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "98d2db2fbe8ae9de776d",
   "position": {
     "x": 0,
@@ -7,7 +7,7 @@
     "z": 4000,
     "height": 205.22096608427543,
     "width": 256.52620760534433,
-    "tabOrder": 4000
+    "tabOrder": 5
   },
   "visual": {
     "visualType": "tableEx",
@@ -968,6 +968,20 @@
         },
         "howCreated": "User",
         "isHiddenInViewMode": true
+      },
+      {
+        "name": "22aa11261d0a10b5a2b2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "key"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

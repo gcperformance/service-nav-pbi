@@ -7,7 +7,7 @@
     "z": 16000,
     "height": 44.701873935264054,
     "width": 630,
-    "tabOrder": 11006
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "slicer",
@@ -186,6 +186,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Service B selection'"
                 }
               }
             }

@@ -7,7 +7,7 @@
     "z": 18000,
     "height": 185,
     "width": 630,
-    "tabOrder": 11008
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -535,7 +535,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Volume of applications for service and main application channel'"
+                  "Value": "'Volume of applications for service and main application channel Service B'"
                 }
               }
             }

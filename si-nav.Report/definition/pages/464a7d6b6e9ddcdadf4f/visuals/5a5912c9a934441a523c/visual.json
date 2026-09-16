@@ -7,7 +7,7 @@
     "z": 13000,
     "height": 70.868824531516182,
     "width": 630,
-    "tabOrder": 11003
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -378,7 +378,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -411,6 +411,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Arial'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Program delivering Service B'"
                 }
               }
             }
