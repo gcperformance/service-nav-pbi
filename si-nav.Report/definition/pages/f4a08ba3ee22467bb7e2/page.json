@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "f4a08ba3ee22467bb7e2",
+  "displayName": "2-Résumé",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "202L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "1c57756fe9964e3aa226",
+      "target": "4c88b6e36e6e92ab42bb",
+      "type": "DataFilter"
+    },
+    {
+      "source": "4c88b6e36e6e92ab42bb",
+      "target": "339f19b0d87eac1dcd43",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1c57756fe9964e3aa226",
+      "target": "339f19b0d87eac1dcd43",
+      "type": "DataFilter"
+    },
+    {
+      "source": "339f19b0d87eac1dcd43",
+      "target": "4c88b6e36e6e92ab42bb",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1c57756fe9964e3aa226",
+      "target": "2031d53019c365abe59a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "2031d53019c365abe59a",
+      "target": "339f19b0d87eac1dcd43",
+      "type": "DataFilter"
+    },
+    {
+      "source": "2031d53019c365abe59a",
+      "target": "1c57756fe9964e3aa226",
+      "type": "DataFilter"
+    }
+  ]
+}

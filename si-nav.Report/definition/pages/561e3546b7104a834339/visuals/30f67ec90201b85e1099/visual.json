@@ -1,10 +1,10 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "30f67ec90201b85e1099",
   "position": {
     "x": 0,
     "y": 173.05361305361308,
-    "z": 6000,
+    "z": 5000,
     "height": 547.00854700854711,
     "width": 640.4972804972806,
     "tabOrder": 3000
@@ -317,56 +317,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "1a414b80e13e2b7bd0a0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dept"
-              }
-            },
-            "Property": "department_en"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "e714d973069c0d43e77e",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "dept"
-                  }
-                },
-                "Property": "org_id"
-              }
-            },
-            "Function": 3
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "64ab5ed1344734a80a56",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "total_applications"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

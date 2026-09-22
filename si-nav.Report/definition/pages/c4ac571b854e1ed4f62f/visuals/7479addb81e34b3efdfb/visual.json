@@ -260,23 +260,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "8428f6b689b0a76b9e95",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "snapshot_options"
-              }
-            },
-            "Property": "options"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

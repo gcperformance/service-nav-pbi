@@ -15,7 +15,7 @@ Originally designed as an internal tool for the Service and Digital Performance 
 5. Refresh the data
 
 ## Contents
-The Power BI dashboard structures service data through queries designed in Power Query, then divides and presents the information in a series of tabs.
+The Power BI dashboard structures service data through queries designed in Power Query, then divides and presents the information in a series of tabs. English and French tabs are stored in the same file for convenience and numbered to ensure consistency.
 
 ### Tabs
 #### Service Navigator

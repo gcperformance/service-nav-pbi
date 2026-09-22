@@ -740,48 +740,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "627f9e3cbdadfc5ff4a7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "main_channel"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "2890f4bf022cca35e211",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "total_applications"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "2f70527b760b9e644d2c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "max_applications"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

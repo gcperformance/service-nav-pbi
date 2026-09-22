@@ -1,0 +1,176 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "052d1cc7e60c72684cc9",
+  "displayName": "6-Résumé de la qualité des données",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b9b556ad7951168199b1",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "department_en"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "e800b2f34106c6cc5d68",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "department_fr"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "ce89fe47403ee307eb35",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "org_id"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "e610d8b5ce24729bd01b",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "qa_issues_descriptions"
+              }
+            },
+            "Property": "severity_en"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "769cb9b29410caa30890",
+        "ordinal": 4,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "qa_issues_descriptions"
+              }
+            },
+            "Property": "severity_fr"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  },
+  "pageBinding": {
+    "name": "a17271061a6a2ee003e2",
+    "type": "Default",
+    "parameters": [],
+    "acceptsFilterContext": "None"
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "258L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "2206297c5d540c49d705",
+      "target": "1ff82e6e59d0e7e092da",
+      "type": "NoFilter"
+    },
+    {
+      "source": "2206297c5d540c49d705",
+      "target": "c5a7d4a5da91e75c0792",
+      "type": "DataFilter"
+    },
+    {
+      "source": "5eef7a0600701d41adca",
+      "target": "1ff82e6e59d0e7e092da",
+      "type": "DataFilter"
+    },
+    {
+      "source": "5eef7a0600701d41adca",
+      "target": "c5a7d4a5da91e75c0792",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5eef7a0600701d41adca",
+      "target": "2206297c5d540c49d705",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1ff82e6e59d0e7e092da",
+      "target": "c5a7d4a5da91e75c0792",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c5a7d4a5da91e75c0792",
+      "target": "1ff82e6e59d0e7e092da",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c5a7d4a5da91e75c0792",
+      "target": "5eef7a0600701d41adca",
+      "type": "NoFilter"
+    },
+    {
+      "source": "2206297c5d540c49d705",
+      "target": "5eef7a0600701d41adca",
+      "type": "NoFilter"
+    }
+  ]
+}

@@ -81,7 +81,7 @@ cultureInfo en-US
 					caption: report_yr
 				column measure_yr
 					caption: measure_yr
-				column planned_actual
+				column planned_actual_en
 					caption: planned_actual
 				column spending_fte
 					caption: spending_fte
@@ -95,7 +95,7 @@ cultureInfo en-US
 					caption: org_program_id
 				column snapshot
 					caption: snapshot
-				column measure_fy_planned_actual
+				column measure_fy_planned_actual_en
 					caption: measure_fy_planned_actual
 			table si
 				caption: si
@@ -361,7 +361,7 @@ cultureInfo en-US
 					caption: options
 				column header_colour
 					caption: header_colour
-				column header_title
+				column header_title_en
 					caption: header_title
 			table fiscal_yr
 				caption: fiscal_yr
@@ -575,6 +575,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Volume d'applications total": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -707,6 +717,36 @@ cultureInfo en-US
 			        },
 			        {
 			          "Filtered application volume": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Volume d'applications": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Volume d'applications selon la sélection": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Volume total d'applications": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -900,6 +940,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Services dotés de normes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -926,6 +976,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "Services with standards (%)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Services dotés de normes (%)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1066,6 +1126,26 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Normes relatives au services": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Dotées d'un rendement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1189,6 +1269,26 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.475
 			          }
+			        },
+			        {
+			          "Normes dont la cible a été atteinte": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Dont la cible a été atteinte": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1215,6 +1315,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "Standards met (%)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Normes dont la cible a été atteinte (%)": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1484,6 +1594,26 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Mode de prestation princpal": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Mode de prestation principal": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1552,6 +1682,26 @@ cultureInfo en-US
 			        },
 			        {
 			          "Service inventory issues": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Enjeux": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Enjeux de service": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1634,6 +1784,26 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Enjeux": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Enjeux de norme relative aux services": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1688,12 +1858,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "service identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -1724,36 +1888,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "maintenance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "examination": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "svc": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "service credential": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -1764,33 +1898,73 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "package": {
+			          "maintenance id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "repair": {
+			          "examination id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "benefit": {
+			          "svc id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "package id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "repair id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "benefit id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "No. d'ID du service": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -2032,6 +2206,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Exercice financier": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2136,6 +2320,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Service standard": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -2359,6 +2553,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.452
 			          }
+			        },
+			        {
+			          "Mode de prestation": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2472,6 +2676,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.451
 			          }
+			        },
+			        {
+			          "Volume total": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2560,6 +2774,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Volume respectant la norme": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2677,6 +2901,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.466
 			          }
+			        },
+			        {
+			          "Rendement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -2722,6 +2956,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Cible": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2775,6 +3019,26 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Cible atteinte?": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Cible atteinte": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -3031,6 +3295,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Champ modifié": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3170,6 +3444,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Valeur dans l'instantané": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3302,6 +3586,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "Live value": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Valeur en direct": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3454,6 +3748,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Code de l'enjeu": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3563,12 +3867,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "service identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3599,36 +3897,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "maintenance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "examination": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "svc": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "service credential": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3639,33 +3907,63 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "package": {
+			          "maintenance id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "repair": {
+			          "examination id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "benefit": {
+			          "svc id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "package id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "repair id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "benefit id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
 			          }
 			        }
 			      ]
@@ -3950,12 +4248,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "service standard": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "standard id": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -4060,6 +4352,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.609
 			          }
+			        },
+			        {
+			          "No. d'ID de la norme": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -4152,6 +4454,26 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Norme relative au service": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Normes relatives aux services": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4816,12 +5138,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "id service": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -5417,12 +5733,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "service identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -5453,36 +5763,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "maintenance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "examination": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "svc": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "service credential": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -5493,33 +5773,63 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "package": {
+			          "maintenance id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "repair": {
+			          "examination id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "benefit": {
+			          "svc id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "package id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "repair id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "benefit id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
 			          }
 			        }
 			      ]
@@ -5575,12 +5885,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "program": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "program identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -5621,63 +5925,13 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "database": {
-			            "Type": "Noun",
+			          "No. d'ID du programme": {
 			            "State": "Suggested",
 			            "Source": {
-			              "Agent": "Thesaurus"
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
 			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "sequencer": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "driver": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "platform": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "suite": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "package": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -5944,91 +6198,97 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "service_fte_spending.planned_actual": {
+			    "service_fte_spending.planned_actual_en": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "service_fte_spending",
-			          "ConceptualProperty": "planned_actual"
+			          "ConceptualProperty": "planned_actual_en"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "planned actual": {
+			          "planned actual en": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "planned_actual": {
+			          "planned_actual_en": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "actual": {
+			          "en": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "planned real": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
+			          "actual en": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "planned existent": {
+			          "planned real en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.591
 			          }
 			        },
 			        {
-			          "planned tangible": {
+			          "planned existent en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.591
 			          }
 			        },
 			        {
-			          "real": {
+			          "planned tangible en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.591
 			          }
 			        },
 			        {
-			          "existent": {
+			          "real en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "tangible": {
+			          "existent en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "tangible en": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
 			          }
 			        }
 			      ]
@@ -6058,6 +6318,16 @@ cultureInfo en-US
 			          "fte": {
 			            "State": "Generated",
 			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Spending / FTE": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -6160,12 +6430,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "program": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "valid database": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -6216,53 +6480,53 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "database": {
+			          "valid package": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.485
 			          }
 			        },
 			        {
-			          "sequencer": {
+			          "valid plug-in": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.485
 			          }
 			        },
 			        {
-			          "driver": {
+			          "valid agenda": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.475
 			          }
 			        },
 			        {
-			          "platform": {
+			          "valid curriculum": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.475
 			          }
 			        },
 			        {
-			          "suite": {
+			          "valid syllabus": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.475
 			          }
 			        }
 			      ]
@@ -6289,12 +6553,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -6374,33 +6632,33 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "maintenance": {
+			          "org package": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "examination": {
+			          "org repair": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "svc": {
+			          "org benefit": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -6427,12 +6685,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "program": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -6532,13 +6784,13 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "database": {
+			          "org package": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.485
 			          }
 			        }
 			      ]
@@ -6662,55 +6914,55 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "service_fte_spending.measure_fy_planned_actual": {
+			    "service_fte_spending.measure_fy_planned_actual_en": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "service_fte_spending",
-			          "ConceptualProperty": "measure_fy_planned_actual"
+			          "ConceptualProperty": "measure_fy_planned_actual_en"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "measure fy planned actual": {
+			          "measure fy planned actual en": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "measure_fy_planned_actual": {
+			          "measure_fy_planned_actual_en": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "measure fy planned real": {
+			          "measure fy planned real en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.748
+			            "Weight": 0.605
 			          }
 			        },
 			        {
-			          "measure fy planned existent": {
+			          "measure fy planned existent en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.748
+			            "Weight": 0.605
 			          }
 			        },
 			        {
-			          "measure fy planned tangible": {
+			          "measure fy planned tangible en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.748
+			            "Weight": 0.605
 			          }
 			        }
 			      ]
@@ -6758,6 +7010,26 @@ cultureInfo en-US
 			          "yr": {
 			            "State": "Generated",
 			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Fiscal year": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Exercice financier": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -6859,12 +7131,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "service identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -6895,36 +7161,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "maintenance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "examination": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "svc": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "service credential": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -6935,33 +7171,63 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "package": {
+			          "maintenance id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "repair": {
+			          "examination id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "benefit": {
+			          "svc id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "package id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "repair id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "benefit id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
 			          }
 			        }
 			      ]
@@ -7098,6 +7364,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.591
 			          }
+			        },
+			        {
+			          "Service": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -7220,6 +7496,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Service": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -7350,6 +7636,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.591
 			          }
+			        },
+			        {
+			          "Description": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -7472,6 +7768,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Description": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -7853,6 +8159,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "Étendue": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -11653,6 +11969,16 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
+			        },
+			        {
+			          "Department / Agency": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -11676,6 +12002,16 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Ministère / Agence": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -11698,12 +12034,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "program": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -11744,66 +12074,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "database": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "sequencer": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "driver": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "platform": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "suite": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "package": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
 			          }
 			        }
 			      ]
@@ -12202,12 +12472,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "id service": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -12361,12 +12625,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "org service": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -12443,33 +12701,33 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "maintenance": {
+			          "org package": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "examination": {
+			          "org repair": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "svc": {
+			          "org benefit": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -12948,12 +13206,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "program": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "program identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -12991,66 +13243,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "database": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "sequencer": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "driver": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "platform": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "suite": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "package": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
 			          }
 			        }
 			      ]
@@ -13104,6 +13296,16 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
+			        },
+			        {
+			          "Program": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -13127,6 +13329,16 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Programme": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -13149,12 +13361,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "program": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -13254,13 +13460,13 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "database": {
+			          "org package": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.491
+			            "Weight": 0.485
 			          }
 			        }
 			      ]
@@ -15337,12 +15543,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "service identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -15373,36 +15573,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "maintenance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "examination": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "svc": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "service credential": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -15413,33 +15583,63 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "package": {
+			          "maintenance id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "repair": {
+			          "examination id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "benefit": {
+			          "svc id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "package id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "repair id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "benefit id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
 			          }
 			        }
 			      ]
@@ -15635,12 +15835,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -16096,6 +16290,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.591
 			          }
+			        },
+			        {
+			          "Service": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -16453,12 +16657,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "org service": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -16535,33 +16733,33 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "maintenance": {
+			          "org package": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "examination": {
+			          "org repair": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "svc": {
+			          "org benefit": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -17578,131 +17776,91 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "snapshot_option.header_title": {
+			    "snapshot_option.header_title_en": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "snapshot_options",
-			          "ConceptualProperty": "header_title"
+			          "ConceptualProperty": "header_title_en"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "header title": {
+			          "header title en": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "header_title": {
+			          "header_title_en": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "title": {
+			          "en": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "header designation": {
+			          "header designation en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.75
+			            "Weight": 0.609
 			          }
 			        },
 			        {
-			          "designation": {
+			          "header name en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.591
 			          }
 			        },
 			        {
-			          "header name": {
+			          "header award en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.591
 			          }
 			        },
 			        {
-			          "header award": {
+			          "header call en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.591
 			          }
 			        },
 			        {
-			          "header call": {
+			          "header heading en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.591
 			          }
 			        },
 			        {
-			          "header heading": {
+			          "header label en": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "header label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "award": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "call": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "heading": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
+			            "Weight": 0.591
 			          }
 			        }
 			      ]
@@ -18903,6 +19061,16 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
+			        },
+			        {
+			          "Exercice financier": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -18925,12 +19093,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -18964,36 +19126,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "maintenance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "examination": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "svc": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "service credential": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -19004,33 +19136,63 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "package": {
+			          "maintenance id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "repair": {
+			          "examination id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "benefit": {
+			          "svc id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "package id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "repair id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "benefit id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
 			          }
 			        }
 			      ]
@@ -19289,6 +19451,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Service": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -19682,6 +19854,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.582
 			          }
+			        },
+			        {
+			          "Description": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -19704,6 +19886,16 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Action à prendre": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -19801,6 +19993,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.476
 			          }
+			        },
+			        {
+			          "Contexte": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -19826,12 +20028,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -20247,6 +20443,16 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
+			        },
+			        {
+			          "Exercice financier": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -20269,12 +20475,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "service": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -20308,36 +20508,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "maintenance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "examination": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "svc": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "service credential": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -20348,33 +20518,63 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "package": {
+			          "maintenance id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "repair": {
+			          "examination id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "benefit": {
+			          "svc id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "package id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "repair id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "benefit id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
 			          }
 			        }
 			      ]
@@ -20634,6 +20834,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.591
 			          }
+			        },
+			        {
+			          "Service": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -20656,12 +20866,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "service standard": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -20966,6 +21170,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Norme relative au service": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -21677,6 +21891,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.582
 			          }
+			        },
+			        {
+			          "Description": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -21699,6 +21923,16 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Action à prendre": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -22085,6 +22319,16 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Sévérité": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -22936,6 +23180,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "Code du champ": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -23290,6 +23544,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.471
 			          }
+			        },
+			        {
+			          "Champ": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -23458,6 +23722,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Description": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -23639,6 +23913,218 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "snapshot_option.header_title_fr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "snapshot_options",
+			          "ConceptualProperty": "header_title_fr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "header title fr": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "header_title_fr": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "header designation fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "header name fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "header award fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "header call fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "header heading fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "header label fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "service_fte_spending.planned_actual_fr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "service_fte_spending",
+			          "ConceptualProperty": "planned_actual_fr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "planned actual fr": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "planned_actual_fr": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "planned real fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "planned existent fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "planned tangible fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "service_fte_spending.spending_fte_fr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "service_fte_spending",
+			          "ConceptualProperty": "spending_fte_fr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "spending fte fr": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "spending_fte_fr": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "service_fte_spending.measure_fy_planned_actual_fr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "service_fte_spending",
+			          "ConceptualProperty": "measure_fy_planned_actual_fr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "measure fy planned actual fr": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "measure_fy_planned_actual_fr": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "measure fy planned real fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "measure fy planned existent fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "measure fy planned tangible fr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
 			          }
 			        }
 			      ]
@@ -23965,6 +24451,138 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "SSs_have_si"
+			        }
+			      ]
+			    },
+			    "service_fte_spending_has_measure_fy_planned_actual_fr": {
+			      "Binding": {
+			        "ConceptualEntity": "service_fte_spending"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "service_fte_spending": {
+			          "Target": {
+			            "Entity": "service_fte_spending"
+			          }
+			        },
+			        "service_fte_spending.measure_fy_planned_actual_fr": {
+			          "Target": {
+			            "Entity": "service_fte_spending.measure_fy_planned_actual_fr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "service_fte_spending"
+			            },
+			            "Object": {
+			              "Role": "service_fte_spending.measure_fy_planned_actual_fr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "service_fte_spending_have_measure_fy_planned_actual_frs"
+			        }
+			      ]
+			    },
+			    "service_fte_spending_has_spending_fte_fr": {
+			      "Binding": {
+			        "ConceptualEntity": "service_fte_spending"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "service_fte_spending": {
+			          "Target": {
+			            "Entity": "service_fte_spending"
+			          }
+			        },
+			        "service_fte_spending.spending_fte_fr": {
+			          "Target": {
+			            "Entity": "service_fte_spending.spending_fte_fr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "service_fte_spending"
+			            },
+			            "Object": {
+			              "Role": "service_fte_spending.spending_fte_fr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "service_fte_spending_have_spending_fte_frs"
+			        }
+			      ]
+			    },
+			    "service_fte_spending_has_planned_actual_fr": {
+			      "Binding": {
+			        "ConceptualEntity": "service_fte_spending"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "service_fte_spending": {
+			          "Target": {
+			            "Entity": "service_fte_spending"
+			          }
+			        },
+			        "service_fte_spending.planned_actual_fr": {
+			          "Target": {
+			            "Entity": "service_fte_spending.planned_actual_fr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "service_fte_spending"
+			            },
+			            "Object": {
+			              "Role": "service_fte_spending.planned_actual_fr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "service_fte_spending_have_planned_actual_frs"
+			        }
+			      ]
+			    },
+			    "snapshot_option_has_header_title_fr": {
+			      "Binding": {
+			        "ConceptualEntity": "snapshot_options"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "snapshot_option": {
+			          "Target": {
+			            "Entity": "snapshot_option"
+			          }
+			        },
+			        "snapshot_option.header_title_fr": {
+			          "Target": {
+			            "Entity": "snapshot_option.header_title_fr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "snapshot_option"
+			            },
+			            "Object": {
+			              "Role": "snapshot_option.header_title_fr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "snapshot_options_have_header_title_frs"
 			        }
 			      ]
 			    },
@@ -25981,7 +26599,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "snapshot_option_has_header_title": {
+			    "snapshot_option_has_header_title_en": {
 			      "Binding": {
 			        "ConceptualEntity": "snapshot_options"
 			      },
@@ -25992,9 +26610,9 @@ cultureInfo en-US
 			            "Entity": "snapshot_option"
 			          }
 			        },
-			        "snapshot_option.header_title": {
+			        "snapshot_option.header_title_en": {
 			          "Target": {
-			            "Entity": "snapshot_option.header_title"
+			            "Entity": "snapshot_option.header_title_en"
 			          }
 			        }
 			      },
@@ -26005,12 +26623,12 @@ cultureInfo en-US
 			              "Role": "snapshot_option"
 			            },
 			            "Object": {
-			              "Role": "snapshot_option.header_title"
+			              "Role": "snapshot_option.header_title_en"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "snapshot_options_have_header_titles"
+			          "ID": "snapshot_options_have_header_title_ens"
 			        }
 			      ]
 			    },
@@ -29360,7 +29978,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "service_fte_spending_has_measure_fy_planned_actual": {
+			    "service_fte_spending_has_measure_fy_planned_actual_en": {
 			      "Binding": {
 			        "ConceptualEntity": "service_fte_spending"
 			      },
@@ -29371,9 +29989,9 @@ cultureInfo en-US
 			            "Entity": "service_fte_spending"
 			          }
 			        },
-			        "service_fte_spending.measure_fy_planned_actual": {
+			        "service_fte_spending.measure_fy_planned_actual_en": {
 			          "Target": {
-			            "Entity": "service_fte_spending.measure_fy_planned_actual"
+			            "Entity": "service_fte_spending.measure_fy_planned_actual_en"
 			          }
 			        }
 			      },
@@ -29384,12 +30002,12 @@ cultureInfo en-US
 			              "Role": "service_fte_spending"
 			            },
 			            "Object": {
-			              "Role": "service_fte_spending.measure_fy_planned_actual"
+			              "Role": "service_fte_spending.measure_fy_planned_actual_en"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "service_fte_spending_have_measure_fy_planned_actuals"
+			          "ID": "service_fte_spending_have_measure_fy_planned_actual_ens"
 			        }
 			      ]
 			    },
@@ -29505,7 +30123,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "service_fte_spending_has_planned_actual": {
+			    "service_fte_spending_has_planned_actual_en": {
 			      "Binding": {
 			        "ConceptualEntity": "service_fte_spending"
 			      },
@@ -29516,9 +30134,9 @@ cultureInfo en-US
 			            "Entity": "service_fte_spending"
 			          }
 			        },
-			        "service_fte_spending.planned_actual": {
+			        "service_fte_spending.planned_actual_en": {
 			          "Target": {
-			            "Entity": "service_fte_spending.planned_actual"
+			            "Entity": "service_fte_spending.planned_actual_en"
 			          }
 			        }
 			      },
@@ -29529,12 +30147,12 @@ cultureInfo en-US
 			              "Role": "service_fte_spending"
 			            },
 			            "Object": {
-			              "Role": "service_fte_spending.planned_actual"
+			              "Role": "service_fte_spending.planned_actual_en"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "service_fte_spending_have_planned_actuals"
+			          "ID": "service_fte_spending_have_planned_actual_ens"
 			        }
 			      ]
 			    },

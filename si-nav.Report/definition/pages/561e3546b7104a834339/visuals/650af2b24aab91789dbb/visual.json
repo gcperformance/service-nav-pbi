@@ -416,48 +416,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "c1e4ec0c07a05d4c8820",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sid_list"
-              }
-            },
-            "Property": "service_id"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "2e02443b0521774164a8",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sid_list"
-              }
-            },
-            "Property": "service_name_en"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "5f7e344c6e8d2633be87",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "total_applications"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
         "name": "f40d602c49991003db39",
         "field": {
           "Column": {

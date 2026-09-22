@@ -4,7 +4,7 @@
   "position": {
     "x": 662.14936247723131,
     "y": 0,
-    "z": 8000,
+    "z": 7000,
     "height": 41.9672131147541,
     "width": 249.47176684881603,
     "tabOrder": 6000
@@ -370,28 +370,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "aae16d2c7db8beb407e8",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "timestamp"
-                  }
-                },
-                "Property": "Timestamp"
-              }
-            },
-            "Function": 3
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

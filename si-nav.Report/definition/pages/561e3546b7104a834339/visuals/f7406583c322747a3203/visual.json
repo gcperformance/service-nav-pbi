@@ -4,7 +4,7 @@
   "position": {
     "x": 419.60264900662253,
     "y": 595.49668874172187,
-    "z": 9002,
+    "z": 10000,
     "height": 101.72185430463577,
     "width": 200.26490066225165,
     "tabOrder": 2000
@@ -212,28 +212,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "705a9d263033769070ee",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "si"
-                  }
-                },
-                "Property": "org_id"
-              }
-            },
-            "Function": 2
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

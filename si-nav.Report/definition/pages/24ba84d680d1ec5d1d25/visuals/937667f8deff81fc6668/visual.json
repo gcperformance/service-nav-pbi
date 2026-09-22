@@ -954,51 +954,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a689de7c3e500656c8a4",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "si_qa_issues_count"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "97f51e188bdb10400200",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "ss_qa_issues_count"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "6fc5e680e10dc1d1b32b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "qa_issues_descriptions"
-              }
-            },
-            "Property": "severity_en"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

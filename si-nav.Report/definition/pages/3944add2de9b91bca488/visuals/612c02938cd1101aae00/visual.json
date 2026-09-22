@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "si.fiscal_yr",
-              "nativeQueryRef": "fiscal_yr"
+              "nativeQueryRef": "Fiscal year",
+              "displayName": "Fiscal year"
             },
             {
               "field": {
@@ -41,7 +42,8 @@
                 }
               },
               "queryRef": "sid_list.service_id",
-              "nativeQueryRef": "service_id1"
+              "nativeQueryRef": "Service ID",
+              "displayName": "Service ID"
             },
             {
               "field": {
@@ -55,7 +57,8 @@
                 }
               },
               "queryRef": "si.service_name_en",
-              "nativeQueryRef": "service_name_en"
+              "nativeQueryRef": "Service",
+              "displayName": "Service"
             },
             {
               "field": {
@@ -69,7 +72,8 @@
                 }
               },
               "queryRef": "dept.org_id",
-              "nativeQueryRef": "org_id1"
+              "nativeQueryRef": "Org ID",
+              "displayName": "Org ID"
             },
             {
               "field": {
@@ -83,7 +87,8 @@
                 }
               },
               "queryRef": "si.department_en",
-              "nativeQueryRef": "department_en"
+              "nativeQueryRef": "Department / Agency",
+              "displayName": "Department / Agency"
             },
             {
               "field": {
@@ -97,7 +102,8 @@
                 }
               },
               "queryRef": "si.service_scope",
-              "nativeQueryRef": "service_scope"
+              "nativeQueryRef": "Scope",
+              "displayName": "Scope"
             },
             {
               "field": {
@@ -111,7 +117,8 @@
                 }
               },
               "queryRef": "si.service_description_en",
-              "nativeQueryRef": "service_description_en"
+              "nativeQueryRef": "Description",
+              "displayName": "Description"
             },
             {
               "field": {
@@ -130,8 +137,8 @@
                 }
               },
               "queryRef": "Sum(si.num_applications_total)",
-              "nativeQueryRef": "total_applications",
-              "displayName": "total_applications"
+              "nativeQueryRef": "Total applications",
+              "displayName": "Total applications"
             }
           ]
         }
@@ -646,126 +653,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "2664199cde9ad3ddbc21",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "si"
-              }
-            },
-            "Property": "fiscal_yr"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "608babd5d19a591190ba",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sid_list"
-              }
-            },
-            "Property": "service_id"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "73702ea4929944530176",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "si"
-              }
-            },
-            "Property": "service_name_en"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "ec6fd12f1cc755e38d4e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dept"
-              }
-            },
-            "Property": "org_id"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "17655d762887843aed22",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "si"
-              }
-            },
-            "Property": "department_en"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "b8fde970702232909cd5",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "si"
-              }
-            },
-            "Property": "service_scope"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "d62802a60a1cd05c492c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "si"
-              }
-            },
-            "Property": "service_description_en"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "1768241a6b33bed8e73c",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "si"
-                  }
-                },
-                "Property": "num_applications_total"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

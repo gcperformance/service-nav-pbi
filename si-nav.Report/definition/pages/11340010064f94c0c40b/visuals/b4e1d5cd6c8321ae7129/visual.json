@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "b4e1d5cd6c8321ae7129",
   "position": {
     "x": 0.99921935987509758,
@@ -939,51 +939,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "040ad1fd5460a002117e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dd_field_names"
-              }
-            },
-            "Property": "Field"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "4eab76d5284b89a7bacd",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dd_field_names"
-              }
-            },
-            "Property": "Field ID"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "220e521d7039525c65ee",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dd_field_names"
-              }
-            },
-            "Property": "Description"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

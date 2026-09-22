@@ -931,25 +931,6 @@
           }
         },
         "type": "Advanced"
-      },
-      {
-        "name": "168f1c06b5013e290b1c",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "si"
-                  }
-                },
-                "Property": "automated_decision_system"
-              }
-            },
-            "Function": 3
-          }
-        },
-        "type": "Advanced"
       }
     ],
     "filterSortOrder": "Custom"

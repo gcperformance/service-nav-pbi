@@ -57,11 +57,11 @@ table service_fte_spending
 
 		annotation SummarizationSetBy = Automatic
 
-	column planned_actual
+	column planned_actual_en
 		dataType: string
 		lineageTag: 80b2fcff-73d2-49aa-8377-405a69f4abe3
 		summarizeBy: none
-		sourceColumn: planned_actual
+		sourceColumn: planned_actual_en
 
 		annotation SummarizationSetBy = Automatic
 
@@ -112,8 +112,30 @@ table service_fte_spending
 
 		annotation SummarizationSetBy = Automatic
 
-	column measure_fy_planned_actual = [measure_yr]&UNICHAR(10)&[planned_actual]
+	column measure_fy_planned_actual_en = [measure_yr]&UNICHAR(10)&[planned_actual_en]
 		lineageTag: e88fceb9-b051-4eba-b0b0-5fe1464ce5aa
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column planned_actual_fr
+		dataType: string
+		lineageTag: df2e3b6c-e6ed-45d9-974f-6cd8646930d0
+		summarizeBy: none
+		sourceColumn: planned_actual_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column spending_fte_fr
+		dataType: string
+		lineageTag: 8aea9979-bb4a-42a4-85ef-4ba32ff45016
+		summarizeBy: none
+		sourceColumn: spending_fte_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column measure_fy_planned_actual_fr = [measure_yr]&UNICHAR(10)&[planned_actual_fr]
+		lineageTag: 8b2498e7-bdb7-481c-8aa6-9ec970b7dcf6
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
@@ -128,9 +150,16 @@ table service_fte_spending
 				    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"measure", type number}}),
 				    #"Added Custom" = Table.AddColumn(#"Changed Type", "snapshot", each "live-direct"),
-				    #"Appended Query" = Table.Combine({#"Added Custom", #"service_fte_spending (2026-01-19)"})
+				    #"Appended Query" = Table.Combine({#"Added Custom", #"service_fte_spending (2026-01-19)"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Appended Query",{{"planned_actual", "planned_actual_en"}}),
+				    #"Added planned_actual_fr" = Table.AddColumn(#"Renamed Columns", "planned_actual_fr", each if [planned_actual_en] = "actual"  then "réel"
+				  else if [planned_actual_en] = "planned"  then "prévu"
+				  else ""),
+				    #"Added Custom1" = Table.AddColumn(#"Added planned_actual_fr", "spending_fte_fr", each if [spending_fte] = "spending"  then "dépenses"
+				  else if [spending_fte] = "ftes"  then "etps"
+				  else "")
 				in
-				    #"Appended Query"
+				    #"Added Custom1"
 
 	annotation PBI_NavigationStepName = Navigation
 

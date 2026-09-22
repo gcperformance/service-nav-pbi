@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "2c1b3aa0d863708b0db0",
   "position": {
     "x": 0,
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "ss.fiscal_yr",
-              "nativeQueryRef": "fiscal_yr"
+              "nativeQueryRef": "Fiscal year",
+              "displayName": "Fiscal year"
             },
             {
               "field": {
@@ -41,7 +42,8 @@
                 }
               },
               "queryRef": "sid_list.service_id",
-              "nativeQueryRef": "service_id1"
+              "nativeQueryRef": "Service ID",
+              "displayName": "Service ID"
             },
             {
               "field": {
@@ -55,7 +57,8 @@
                 }
               },
               "queryRef": "ss.service_standard_id",
-              "nativeQueryRef": "service_standard_id"
+              "nativeQueryRef": "Service standard ID",
+              "displayName": "Service standard ID"
             },
             {
               "field": {
@@ -69,7 +72,8 @@
                 }
               },
               "queryRef": "ss.service_standard_en",
-              "nativeQueryRef": "service_standard_en"
+              "nativeQueryRef": "Service standard",
+              "displayName": "Service standard"
             },
             {
               "field": {
@@ -83,7 +87,8 @@
                 }
               },
               "queryRef": "ss.volume_meeting_target",
-              "nativeQueryRef": "volume_meeting_target"
+              "nativeQueryRef": "Volume meeting target",
+              "displayName": "Volume meeting target"
             },
             {
               "field": {
@@ -97,7 +102,8 @@
                 }
               },
               "queryRef": "ss.total_volume",
-              "nativeQueryRef": "total_volume"
+              "nativeQueryRef": "Total volume",
+              "displayName": "Total volume"
             },
             {
               "field": {
@@ -111,7 +117,8 @@
                 }
               },
               "queryRef": "ss.performance",
-              "nativeQueryRef": "performance"
+              "nativeQueryRef": "Performance",
+              "displayName": "Performance"
             },
             {
               "field": {
@@ -125,7 +132,8 @@
                 }
               },
               "queryRef": "ss.target",
-              "nativeQueryRef": "target"
+              "nativeQueryRef": "Target",
+              "displayName": "Target"
             },
             {
               "field": {
@@ -139,7 +147,8 @@
                 }
               },
               "queryRef": "ss.target_met",
-              "nativeQueryRef": "target_met"
+              "nativeQueryRef": "Target met",
+              "displayName": "Target met"
             },
             {
               "field": {
@@ -153,7 +162,8 @@
                 }
               },
               "queryRef": "dept.org_id",
-              "nativeQueryRef": "org_id"
+              "nativeQueryRef": "Org ID",
+              "displayName": "Org ID"
             }
           ]
         }
@@ -339,7 +349,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "45D"
+                  "Value": "50.904059040590404D"
                 }
               }
             }
@@ -815,149 +825,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "475e46f7b901e05db6a5",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ss"
-              }
-            },
-            "Property": "fiscal_yr"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "04e08dbe5bc6d950ce64",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "sid_list"
-              }
-            },
-            "Property": "service_id"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "038453d3a609da3b07d0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ss"
-              }
-            },
-            "Property": "service_standard_id"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "ff619caa5201ac0a5ad6",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ss"
-              }
-            },
-            "Property": "service_standard_en"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "94305020b9d367125670",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ss"
-              }
-            },
-            "Property": "volume_meeting_target"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "7a463211203de865d0a9",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ss"
-              }
-            },
-            "Property": "total_volume"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b60d9ab954438ddc8094",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ss"
-              }
-            },
-            "Property": "performance"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "df137815170e89063704",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ss"
-              }
-            },
-            "Property": "target"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "f9713d237295d83c1060",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ss"
-              }
-            },
-            "Property": "target_met"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "9c206ac0060683debd18",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dept"
-              }
-            },
-            "Property": "org_id"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

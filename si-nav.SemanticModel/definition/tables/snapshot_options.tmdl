@@ -23,8 +23,14 @@ table snapshot_options
 
 		annotation SummarizationSetBy = Automatic
 
-	column header_title = "Government of Canada Service Inventory - "&[options]
+	column header_title_en = "Government of Canada Service Inventory - "&[options]
 		lineageTag: c48aae16-335e-4798-a2d7-1d0ae44ae475
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column header_title_fr = "Répertoire des services du Gouv. du Canada - "&[options]
+		lineageTag: a3a38e43-7690-4c09-bbb0-6766f14daa92
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic

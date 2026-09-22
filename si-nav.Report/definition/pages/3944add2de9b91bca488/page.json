@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "3944add2de9b91bca488",
-  "displayName": "Service Navigator",
+  "displayName": "1-Navigator",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,

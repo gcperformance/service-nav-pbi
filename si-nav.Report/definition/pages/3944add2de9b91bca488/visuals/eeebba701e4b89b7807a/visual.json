@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "service_fte_spending.spending_fte",
-              "nativeQueryRef": "spending_fte",
-              "active": true
+              "nativeQueryRef": "Spending / FTE",
+              "active": true,
+              "displayName": "Spending / FTE"
             },
             {
               "field": {
@@ -38,7 +39,7 @@
                       "Entity": "service_fte_spending"
                     }
                   },
-                  "Property": "measure_fy_planned_actual"
+                  "Property": "measure_fy_planned_actual_en"
                 }
               },
               "queryRef": "service_fte_spending.measure_fy_planned_actual",
@@ -61,8 +62,9 @@
                 }
               },
               "queryRef": "service_fte_spending.program_id",
-              "nativeQueryRef": "program_id",
-              "active": true
+              "nativeQueryRef": "Program ID",
+              "active": true,
+              "displayName": "Program ID"
             },
             {
               "field": {
@@ -76,8 +78,9 @@
                 }
               },
               "queryRef": "program_list.program_en",
-              "nativeQueryRef": "program_en",
-              "active": true
+              "nativeQueryRef": "Program",
+              "active": true,
+              "displayName": "Program"
             }
           ]
         },
@@ -1132,81 +1135,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "a6d5cb56632c599bc1ad",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "service_fte_spending"
-              }
-            },
-            "Property": "spending_fte"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "12f1bb0090e962b1d08b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "service_fte_spending"
-              }
-            },
-            "Property": "measure_fy_planned_actual"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "e43667ed002bec1e6982",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "service_fte_spending"
-              }
-            },
-            "Property": "program_id"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "234ab3e3547ee08d9904",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "program_list"
-              }
-            },
-            "Property": "program_en"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "77ea8085c398a6012c99",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "service_fte_spending"
-                  }
-                },
-                "Property": "measure"
-              }
-            },
-            "Function": 3
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

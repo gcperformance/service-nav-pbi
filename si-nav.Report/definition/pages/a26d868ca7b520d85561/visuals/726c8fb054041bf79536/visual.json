@@ -586,34 +586,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "47591cbd0082a4b3e17e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "standards_with_performance"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b63659efcd4501e10502",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "!measures"
-              }
-            },
-            "Property": "standards_met"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

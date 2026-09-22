@@ -963,20 +963,6 @@
         },
         "howCreated": "User",
         "isHiddenInViewMode": true
-      },
-      {
-        "name": "a500727066d27b357b69",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "updates since 2026-01-19"
-              }
-            },
-            "Property": "key"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }
