@@ -317,5 +317,56 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0690a73a288b3d345ac1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "department_en"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "12137da70ce58c80a780",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dept"
+                  }
+                },
+                "Property": "org_id"
+              }
+            },
+            "Function": 3
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "604348634a75871e7110",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "!measures"
+              }
+            },
+            "Property": "total_applications"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

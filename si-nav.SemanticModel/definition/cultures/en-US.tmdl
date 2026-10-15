@@ -3161,7 +3161,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "fy_org_id_service_id": {
+			          "ID": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -18314,6 +18314,26 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Dataset": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Table de données": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]

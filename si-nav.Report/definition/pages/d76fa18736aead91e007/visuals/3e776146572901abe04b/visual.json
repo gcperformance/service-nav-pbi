@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "3e776146572901abe04b",
   "position": {
     "x": 0,
@@ -27,8 +27,23 @@
                 }
               },
               "queryRef": "updates since 2026-01-19.key",
-              "nativeQueryRef": "fy_org_id_service_id",
-              "displayName": "fy_org_id_service_id"
+              "nativeQueryRef": "ID",
+              "displayName": "ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "updates since 2026-01-19"
+                    }
+                  },
+                  "Property": "comp_name"
+                }
+              },
+              "queryRef": "updates since 2026-01-19.comp_name",
+              "nativeQueryRef": "Table de données",
+              "displayName": "Table de données"
             },
             {
               "field": {
@@ -453,7 +468,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "436.4283250710939D"
+                  "Value": "351.159898181578D"
                 }
               }
             }
@@ -467,7 +482,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "445.7090550439573D"
+                  "Value": "350.3157611309099D"
                 }
               }
             }
@@ -748,7 +763,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Comparaison entre les données en direct et l''instantané pour Renseignements sur l''identification des services, données volumétrique'"
+                  "Value": "'Comparaison entre les données en direct et l''instantané'"
                 }
               }
             },
@@ -958,6 +973,76 @@
         },
         "howCreated": "User",
         "isHiddenInViewMode": true
+      },
+      {
+        "name": "8f7d3463e973db2bc06c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "key"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a706e587f505ee937fe4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "field"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5caed97675be691fe990",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "base_value"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0eb69c8458a91cf90c8a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "comp_value"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "15efc57fe9dda78a789d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "comp_name"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

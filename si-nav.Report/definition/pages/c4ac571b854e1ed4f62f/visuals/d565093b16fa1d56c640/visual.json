@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "d565093b16fa1d56c640",
   "position": {
     "x": 0,
@@ -27,8 +27,23 @@
                 }
               },
               "queryRef": "updates since 2026-01-19.key",
-              "nativeQueryRef": "fy_org_id_service_id",
-              "displayName": "fy_org_id_service_id"
+              "nativeQueryRef": "ID",
+              "displayName": "ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "updates since 2026-01-19"
+                    }
+                  },
+                  "Property": "comp_name"
+                }
+              },
+              "queryRef": "updates since 2026-01-19.comp_name",
+              "nativeQueryRef": "Dataset",
+              "displayName": "Dataset"
             },
             {
               "field": {
@@ -453,7 +468,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "436.4283250710939D"
+                  "Value": "394.62659323036917D"
                 }
               }
             }
@@ -467,13 +482,41 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "445.7090550439573D"
+                  "Value": "372.71213718008806D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "updates since 2026-01-19.comp_value"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "270D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "updates since 2026-01-19.key"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "121D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "updates since 2026-01-19.field"
           }
         }
       ],
@@ -497,6 +540,20 @@
               "expr": {
                 "Literal": {
                   "Value": "'Arial'"
+                }
+              }
+            },
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'fixedWidth'"
+                }
+              }
+            },
+            "defaultColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "90D"
                 }
               }
             }
@@ -748,7 +805,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Comparison between live data and snapshot for Service Identification Information & Metrics'"
+                  "Value": "'Comparison between live data and snapshot'"
                 }
               }
             },
@@ -958,6 +1015,76 @@
         },
         "howCreated": "User",
         "isHiddenInViewMode": true
+      },
+      {
+        "name": "353a201a70a4d53080c2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "key"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "3fa1b0c0b6126458ce51",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "field"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "bb18951fd7316ba2a33d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "base_value"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5a1300a683712fa81319",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "comp_value"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "efe1d1cbefae58ff4350",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "comp_name"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

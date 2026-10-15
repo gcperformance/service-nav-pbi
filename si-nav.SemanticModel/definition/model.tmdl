@@ -18,9 +18,13 @@ queryGroup qa
 
 	annotation PBI_QueryGroupOrder = 2
 
+queryGroup comparisons
+
+	annotation PBI_QueryGroupOrder = 3
+
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["si","ss","service_fte_spending","timestamp","dept","populated_orgs","program_list","si_volume","maf_all","updates since 2026-01-19","sid_list","si (2026-01-19)","ss (2026-01-19)","service_fte_spending (2026-01-19)","si_volume (2026-01-19)","maf_all (2026-01-19)","snapshot_options","fiscal_yr","si_qa_report","ss_qa_report","si_orgs","ss_orgs","qa_issues_descriptions","dd_field_names"]
+annotation PBI_QueryOrder = ["si","ss","service_fte_spending","timestamp","dept","populated_orgs","program_list","si_volume","maf_all","updates since 2026-01-19","sid_list","si (2026-01-19)","ss (2026-01-19)","service_fte_spending (2026-01-19)","si_volume (2026-01-19)","maf_all (2026-01-19)","snapshot_options","fiscal_yr","si_qa_report","ss_qa_report","si_orgs","ss_orgs","qa_issues_descriptions","dd_field_names","si_all","ss_all","si updates since 2026-01-19","ss updates since 2026-01-19","all updates since 2026-01-19"]
 
 annotation PBI_ProTooling = ["DevMode"]
 

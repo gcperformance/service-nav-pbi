@@ -83,15 +83,12 @@ table 'updates since 2026-01-19'
 
 	partition 'updates since 2026-01-19' = m
 		mode: import
-		queryGroup: 'live data with snapshot'
+		queryGroup: comparisons
 		source =
 				let
-				    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/2026-01-19_si_comparison.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
-				    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
-				    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true]),
-				    #"Added Custom" = Table.AddColumn(#"Promoted Headers", "snapshot", each "2026-01-19")
+				    Source = #"all updates since 2026-01-19"
 				in
-				    #"Added Custom"
+				    Source
 
 	annotation PBI_NavigationStepName = Navigation
 

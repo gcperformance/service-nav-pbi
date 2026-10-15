@@ -40,24 +40,8 @@
         "howCreated": "User"
       },
       {
-        "name": "ce89fe47403ee307eb35",
-        "ordinal": 2,
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dept"
-              }
-            },
-            "Property": "org_id"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
-      },
-      {
         "name": "e610d8b5ce24729bd01b",
-        "ordinal": 3,
+        "ordinal": 2,
         "field": {
           "Column": {
             "Expression": {
@@ -88,7 +72,7 @@
       },
       {
         "name": "769cb9b29410caa30890",
-        "ordinal": 4,
+        "ordinal": 3,
         "field": {
           "Column": {
             "Expression": {

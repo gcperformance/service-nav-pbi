@@ -8,7 +8,25 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "b83f6eaed79034469287",
+        "name": "e0a0b181840f18dd9dfd",
+        "displayName": "Table de données",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "updates since 2026-01-19"
+              }
+            },
+            "Property": "comp_name"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "0f84b8fee558b5f4bf58",
+        "ordinal": 1,
         "field": {
           "Column": {
             "Expression": {
@@ -16,12 +34,29 @@
                 "Entity": "dept"
               }
             },
-            "Property": "org_id"
+            "Property": "department_en"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "d2aa84dc971e5cd1e73d",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dept"
+              }
+            },
+            "Property": "department_fr"
           }
         },
         "type": "Categorical",
         "howCreated": "User"
       }
-    ]
+    ],
+    "filterSortOrder": "Custom"
   }
 }

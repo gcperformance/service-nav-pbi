@@ -119,3 +119,73 @@ expression ss_orgs =
 
 	annotation PBI_ResultType = List
 
+expression si_all =
+		let
+		    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/si_all.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+		    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+		    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true])
+		in
+		    #"Promoted Headers"
+	lineageTag: 21ea0f0f-5930-424e-a5b9-8b5c9ae544e2
+	queryGroup: qa
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression ss_all =
+		let
+		    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/ss_all.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+		    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+		    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true])
+		in
+		    #"Promoted Headers"
+	lineageTag: 93e159bc-5b26-4925-9df1-71e0c6e24865
+	queryGroup: qa
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'si updates since 2026-01-19' =
+		let
+		    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/2026-01-19_si_comparison.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+		    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+		    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true]),
+		    #"Added Custom" = Table.AddColumn(#"Promoted Headers", "snapshot", each "2026-01-19")
+		in
+		    #"Added Custom"
+	lineageTag: 817a1591-3886-47b0-a967-5ca912340b38
+	queryGroup: comparisons
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'ss updates since 2026-01-19' =
+		let
+		    Source = Csv.Document(Web.Contents("https://github.com/gcperformance/service-data/releases/latest/download/2026-01-19_ss_comparison.csv"),[Delimiter=";", Columns=null, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+		    #"Removed Bottom Rows" = Table.RemoveLastN(Source,2),
+		    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Bottom Rows", [PromoteAllScalars=true]),
+		    #"Added Custom" = Table.AddColumn(#"Promoted Headers", "snapshot", each "2026-01-19")
+		in
+		    #"Added Custom"
+	lineageTag: af9555ac-2e98-4440-9c8c-e578ef4c3800
+	queryGroup: comparisons
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'all updates since 2026-01-19' =
+		let
+		    Source = Table.Combine({#"si updates since 2026-01-19", #"ss updates since 2026-01-19"})
+		in
+		    Source
+	lineageTag: 22adc168-e337-4647-aac7-dafa36959d78
+	queryGroup: comparisons
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
